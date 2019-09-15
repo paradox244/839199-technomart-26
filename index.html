@@ -16,7 +16,7 @@
         </a>
         <div class="header-search">
           <img src="img/icon-svg/icon-search.svg" alt="Поиск" width="16" height="20">
-          <!--Тут должна быть форма.-->
+          <input type="search" name="search" id="search" placeholder="Поиск:" required>
         </div>
         <a href="#" class="header-bookmark">
           <img src="img/icon-svg/icon-bookmark.svg" alt="Закладки" width="16" height="20">
@@ -87,26 +87,26 @@
       </div>
       <div class="features-slider">
         <div class="features-slider-content">
-          <h2 class="features-slider-title">Дрели</h2>
+          <p class="features-slider-title">Дрели</p>
           <p class="features-title">Соседям на радость!</p>
           <img src="img/content-images/drill.jpg" alt="Картинка с дрелью" width="620" height="266">
         </div>
-        <button type="button" class="slider-btn-left"><img src="img/icon-svg/slider-icon-left-right.svg"
-            alt="Кнопка переключения слайдера в лево" width="22"
+        <button type="button" class="slider-btn-next"><img src="img/icon-svg/slider-icon-left-right.svg"
+            alt="Следующий слайд" width="22"
             height="40"></button>
-        <button type="button" class="slider-btn-right"><img src="img/icon-svg/slider-icon-left-right.svg"
-            alt="Кнопка переключения слайдера в право" width="22" height="40"></button>
+        <button type="button" class="slider-btn-previous"><img src="img/icon-svg/slider-icon-left-right.svg"
+            alt="Предыдущий слайд" width="22" height="40"></button>
         <a href="#" class="slider-button">Открыть каталог</a>
       </div>
       <div class="features-slider">
         <div class="features-slider-content">
-          <h2 class="features-slider-title">Перфораторы</h2>
+          <p class="features-slider-title">Перфораторы</p>
           <p class="features-title">Настоящие мужские игрушки</p>
           <img src="img/content-images/perforator.jpg" alt="Картинка с перфоратором" width="620" height="266">
         </div>
-        <button type="button" class="slider-btn-left"><img src="img/icon-svg/slider-icon-left-right.svg"
+        <button type="button" class="slider-btn-next"><img src="img/icon-svg/slider-icon-left-right.svg"
             alt="Кнопка переключения слайдера в лево" width="22" height="40"></button>
-        <button type="button" class="slider-btn-right"><img src="img/icon-svg/slider-icon-left-right.svg"
+        <button type="button" class="slider-btn-previous"><img src="img/icon-svg/slider-icon-left-right.svg"
             alt="Кнопка переключения слайдера в право" width="22" height="40"></button>
         <a href="#" class="slider-button">Открыть каталог</a>
       </div>
@@ -126,11 +126,11 @@
         <img src="img/icon-svg/delivery.svg" alt="" width="65" height="46">
       </div>
     </section>
-    <div class="header-popular">
-      <p class="popular-title">Популярные товары:</p>
-      <a href="#" class="popular-subtitle">Все пополярные товары</a>
-    </div>
-    <section class="popular-catalog">
+    <section class="all-popular-products">
+      <div class="header-popular-products">
+        <p class="popular-title">Популярные товары:</p>
+        <a href="#" class="popular-subtitle">Все пополярные товары</a>
+      </div>
       <ul class="popular-catalog-products">
         <li>
           <img src="img/content-images/BFG-9000.jpg" alt="Перфоратор BOSCH BFG 9000" width="218" height="170">
@@ -139,6 +139,10 @@
             <del>32500 Р.</del>
           </span>
           <span class="catalog-product-price">25500 Р.</span>
+          <div class="catalog-popup">
+            <a href="#" class="catalog-popup-buy">Купить</a>
+            <a href="#" class="catalog-popup-bookmark">В закладки</a>
+          </div>
         </li>
         <li>
           <img src="img/content-images/BFG-3000.jpg" alt="Перфоратор BOSCH BFG 3000" width="218" height="170">
@@ -147,6 +151,10 @@
             <del>22500 Р.</del>
           </span>
           <span class="catalog-product-price">15500 Р.</span>
+          <div class="catalog-popup">
+            <a href="#" class="catalog-popup-buy">Купить</a>
+            <a href="#" class="catalog-popup-bookmark">В закладки</a>
+          </div>
         </li>
         <li>
           <img src="img/content-images/BFG-6000.jpg" alt="Перфоратор BOSCH BFG 6000" width="218" height="170">
@@ -155,19 +163,27 @@
             <del>30500 Р.</del>
           </span>
           <span class="catalog-product-price">25500 Р.</span>
+          <div class="catalog-popup">
+            <a href="#" class="catalog-popup-buy">Купить</a>
+            <a href="#" class="catalog-popup-bookmark">В закладки</a>
+          </div>
         </li>
         <li>
           <img src="img/content-images/BFG-2000.jpg" alt="Перфоратор BOSCH BFG 2000" width="218" height="170">
           <h3 class="catalog-product-firm">Перфоратор BOSCH BFG 2000</h3>
           <span class="catalog-product-price">12500 Р.</span>
+          <div class="catalog-popup">
+            <a href="#" class="catalog-popup-buy">Купить</a>
+            <a href="#" class="catalog-popup-bookmark">В закладки</a>
+          </div>
         </li>
       </ul>
     </section>
-    <div class="header-popular">
-      <p class="popular-title">Популярные производители:</p>
-      <a href="#" class="popular-subtitle">Все производители</a>
-    </div>
     <section class="popular-brands">
+      <div class="all-popular-brands">
+        <p class="popular-title">Популярные производители:</p>
+        <a href="#" class="popular-subtitle">Все производители</a>
+      </div>
       <a href="#" class="brand">
         <img src="img/content-images/bosch.png" width="126" height="37" alt="BOSCH">
       </a>
@@ -214,7 +230,6 @@
           бесплатно!<br>
           Ведь мы неплохо заработаем<br>поднимая его на ваш этаж.
         </p>
-        <img src="img/content-images/delivery-image.png" alt="Доставка" width="468" height="261">
       </div>
       <div class="advantage-details">
         <h2 class="advantage-details-title">Кредит</h2>
@@ -223,7 +238,6 @@
           Кредитные консультанты придут вам на помощь.
         </p>
         <button type="submit" class="credit-details-btn">Отправить заявку</button>
-        <img src="img/content-images/credit-image.png" alt="Кредит" width="465" height="285">
       </div>
       <div class="advantage-details">
         <h2 class="advantage-details-title">Гарантия</h2>
@@ -233,7 +247,6 @@
           обменяем сгоревший товар на новый.<br>
           Дом уж восстановите как-нибудь сами.
         </p>
-        <img src="img/content-images/warranty-image.png" alt="Гарантия" width="389" height="283">
       </div>
     </section>
     <div class="company">
@@ -269,17 +282,16 @@
         <a href="#" class="company-message">Заблудились? Напишите нам!</a>
         <div class="company-contacts-maps-popup">
           <img src="img/content-images/map-popup.png" alt="Развернутая карта - Наш офис " width="970" height="476">
-          <button class="popup-btn-close"><img src="img/btn/btn-popup-close.svg" alt="Кнопка закрытия карты" width="21"
-              height="21"></button>
+          <button class="popup-btn-close" type="button" title="Кнопка закрытия карты">Закрыть</button>
         </div>
-        <form action="#" method="POST" class="company-contacts-form">
+        <form action="https://echo.htmlacademy.ru" method="POST" class="company-contacts-form">
           <label for="your-name">Ваше имя:</label>
           <input type="text" id="your-name" name="name" placeholder="Имя фамилия">
           <label for="your-email">Ваш e-mail:</label>
           <input type="email" id="your-email" name="e-mail" placeholder="email@example.com">
           <textarea name="text-email" id="text-email" cols="50" rows="5">В свободной форме</textarea>
-          <input type="submit" class="popup-btn-send" value="Отправить"></input>
-          <button class="popup-btn-close"><img src="img/btn/btn-popup-close.svg" alt="Кнопка закрытия формы" width="21" height="21"></button>
+          <input type="submit" class="popup-btn-send" value="Отправить">
+          <button class="popup-btn-close" type="button" title="Кнопка закрытия формы">Закрыть</button>
         </form>
       </div>
     </div>
