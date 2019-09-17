@@ -23,7 +23,9 @@
             тут должна быть иконка Поиск
             src="img/icon-svg/icon-search.svg"
           -->
-          <input type="search" name="search" id="search" placeholder="Поиск:" required>
+          <form action="https://echo.htmlacademy.ru" class="form-search" method="post">
+            <input type="search" name="search" id="search" placeholder="Поиск:" required>
+          </form>
         </div>
         <a href="#" class="header-bookmark">
           <!--
@@ -36,7 +38,7 @@
             тут должна быть иконка Корзина
             src="img/icon-svg/icon-cart.svg"
           -->
-          <span class="header-numder-cart">10</span>
+          <span class="header-number-cart">10</span>
         </a>
         <a href="#" class="header-order">Оформить заказ</a>
       </div>
@@ -53,7 +55,7 @@
           -->
           +7 (812) 555-05-55
         </a>
-        <p class="header-contact-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        <p class="header-contact-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
       </div>
       <div class="header-middle-user">
         <a href="#" class="header-user-login-online">
@@ -128,10 +130,12 @@
         <span class="catalog-form-filter">Фильтр:</span>
         <fieldset class="price-filter-form">
           <legend class="panel-form-title">Цена:</legend>
-          <input class="price-filter-control" type="range" min="0" max="30000">
-          <input class="price-filter-min" type="text" value="0" name="min-value">
-          <span>—</span>
-          <input class="price-filter-max" type="text" value="30000" name="max-value">
+          <label for="control" class="visually-hidden">Ползунок регулирование цены</label>
+          <input class="price-filter-control" type="range" min="0" max="30000" id="control" >
+          <label for="min-value" class="visually-hidden">Минимальная сумма</label>
+          <input class="price-filter-min" type="text" value="0" name="min-value" id="min-value">
+          <label for="max-value" class="visually-hidden">Максимальная сумма</label>
+          <input class="price-filter-max" type="text" value="30000" name="max-value" id="max-value">
         </fieldset>
         <fieldset class="brand-form">
           <legend class="panel-form-title">Производители</legend>
@@ -189,7 +193,7 @@
         <li>
           <!--
             тут должна быть картинка Перфоратор BOSCH BFG 3000
-            src="img/content-images/BFG-3000.jpg"
+            src="img/content-images/bfg-3000.jpg"
           -->
           <h3 class="catalog-product-firm">Перфоратор BOSCH BFG 3000</h3>
           <span class="catalog-product-outdate">
@@ -204,7 +208,7 @@
         <li>
           <!--
             тут должна быть картинка Перфоратор BOSCH BFG 6000
-            src="img/content-images/BFG-6000.jpg"
+            src="img/content-images/bfg-6000.jpg"
           -->
           <h3 class="catalog-product-firm">Перфоратор BOSCH BFG 6000</h3>
           <span class="catalog-product-outdate">
@@ -219,7 +223,7 @@
         <li>
           <!--
             тут должна быть картинка Перфоратор BOSCH BFG 2000
-            src="img/content-images/BFG-2000.jpg"
+            src="img/content-images/bfg-2000.jpg"
           -->
           <h3 class="catalog-product-firm">Перфоратор BOSCH BFG 2000</h3>
           <span class="catalog-product-price">12500 Р.</span>
@@ -231,7 +235,7 @@
         <li>
           <!--
             тут должна быть картинка Перфоратор BOSCH BFG 3000
-            src="img/content-images/BFG-3000.jpg"
+            src="img/content-images/bfg-3000.jpg"
           -->
           <h3 class="catalog-product-firm">Перфоратор BOSCH BFG 3000</h3>
           <span class="catalog-product-outdate">
@@ -246,7 +250,7 @@
         <li>
           <!--
             тут должна быть картинка Перфоратор BOSCH BFG 6000
-            src="img/content-images/BFG-6000.jpg"
+            src="img/content-images/bfg-6000.jpg"
           -->
           <h3 class="catalog-product-firm">Перфоратор BOSCH BFG 6000</h3>
           <span class="catalog-product-outdate">
@@ -261,7 +265,7 @@
         <li>
           <!--
             тут должна быть картинка Перфоратор BOSCH BFG 2000
-            src="img/content-images/BFG-2000.jpg"
+            src="img/content-images/bfg-2000.jpg"
           -->
           <h3 class="catalog-product-firm">Перфоратор BOSCH BFG 2000</h3>
           <span class="catalog-product-price">12500 Р.</span>
@@ -273,7 +277,7 @@
         <li>
           <!--
             тут должна быть картинка Перфоратор BOSCH BFG 3000
-            src="img/content-images/BFG-3000.jpg"
+            src="img/content-images/bfg-3000.jpg"
           -->
           <h3 class="catalog-product-firm">Перфоратор BOSCH BFG 3000</h3>
           <span class="catalog-product-outdate">
@@ -288,7 +292,7 @@
         <li>
           <!--
             тут должна быть картинка Перфоратор BOSCH BFG 6000
-            src="img/content-images/BFG-6000.jpg"
+            src="img/content-images/bfg-6000.jpg"
           -->
           <h3 class="catalog-product-firm">Перфоратор BOSCH BFG 6000</h3>
           <span class="catalog-product-outdate">
@@ -303,7 +307,7 @@
         <li>
           <!--
             тут должна быть картинка Перфоратор BOSCH BFG 2000
-            src="img/content-images/BFG-2000.jpg"
+            src="img/content-images/bfg-2000.jpg"
           -->
           <h3 class="catalog-product-firm">Перфоратор BOSCH BFG 2000</h3>
           <span class="catalog-product-price">12500 Р.</span>
