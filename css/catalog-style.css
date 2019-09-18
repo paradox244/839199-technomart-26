@@ -1,3 +1,229 @@
 body {
     background-color: green;
 }
+
+/* cuprum */
+@font-face {
+    font-family: 'Cuprum';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/cuprum/cuprum-v11-latin_cyrillic-regular.eot');
+    src: local('Cuprum Regular'), local('Cuprum-Regular'),
+        url('../fonts/cuprum/cuprum-v11-latin_cyrillic-regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/cuprum/cuprum-v11-latin_cyrillic-regular.woff2') format('woff2'),
+        url('../fonts/cuprum/cuprum-v11-latin_cyrillic-regular.woff') format('woff'),
+        url('../fonts/cuprum/cuprum-v11-latin_cyrillic-regular.ttf') format('truetype'),
+        url('../fonts/cuprum/cuprum-v11-latin_cyrillic-regular.svg#Cuprum') format('svg');
+}
+
+@font-face {
+    font-family: 'Cuprum';
+    font-style: italic;
+    font-weight: 400;
+    src: url('../fonts/cuprum/cuprum-v11-latin_cyrillic-italic.eot');
+    src: local('Cuprum Italic'), local('Cuprum-Italic'),
+        url('../fonts/cuprum/cuprum-v11-latin_cyrillic-italic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/cuprum/cuprum-v11-latin_cyrillic-italic.woff2') format('woff2'),
+        url('../fonts/cuprum/cuprum-v11-latin_cyrillic-italic.woff') format('woff'),
+        url('../fonts/cuprum/cuprum-v11-latin_cyrillic-italic.ttf') format('truetype'),
+        url('../fonts/cuprum/cuprum-v11-latin_cyrillic-italic.svg#Cuprum') format('svg');
+}
+
+@font-face {
+    font-family: 'Cuprum';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/cuprum/cuprum-v11-latin_cyrillic-700.eot');
+    src: local('Cuprum Bold'), local('Cuprum-Bold'),
+        url('../fonts/cuprum/cuprum-v11-latin_cyrillic-700.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/cuprum/cuprum-v11-latin_cyrillic-700.woff2') format('woff2'),
+        url('../fonts/cuprum/cuprum-v11-latin_cyrillic-700.woff') format('woff'),
+        url('../fonts/cuprum/cuprum-v11-latin_cyrillic-700.ttf') format('truetype'),
+        url('../fonts/cuprum/cuprum-v11-latin_cyrillic-700.svg#Cuprum') format('svg');
+}
+
+/* pt-sans */
+@font-face {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/pt-sans/pt-sans-v11-latin-regular.eot');
+    src: local('PT Sans'), local('PTSans-Regular'),
+        url('../fonts/pt-sans/pt-sans-v11-latin-regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/pt-sans/pt-sans-v11-latin-regular.woff2') format('woff2'),
+        url('../fonts/pt-sans/pt-sans-v11-latin-regular.woff') format('woff'),
+        url('../fonts/pt-sans/pt-sans-v11-latin-regular.ttf') format('truetype'),
+        url('../fonts/pt-sans/pt-sans-v11-latin-regular.svg#PTSans') format('svg');
+}
+
+@font-face {
+    font-family: 'PT Sans';
+    font-style: italic;
+    font-weight: 400;
+    src: url('../fonts/pt-sans/pt-sans-v11-latin-italic.eot');
+    src: local('PT Sans Italic'), local('PTSans-Italic'),
+        url('../fonts/pt-sans/pt-sans-v11-latin-italic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/pt-sans/pt-sans-v11-latin-italic.woff2') format('woff2'),
+        url('../fonts/pt-sans/pt-sans-v11-latin-italic.woff') format('woff'),
+        url('../fonts/pt-sans/pt-sans-v11-latin-italic.ttf') format('truetype'),
+        url('../fonts/pt-sans/pt-sans-v11-latin-italic.svg#PTSans') format('svg');
+}
+
+@font-face {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/pt-sans/pt-sans-v11-latin-700.eot');
+    src: local('PT Sans Bold'), local('PTSans-Bold'),
+        url('../fonts/pt-sans/pt-sans-v11-latin-700.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/pt-sans/pt-sans-v11-latin-700.woff2') format('woff2'),
+        url('../fonts/pt-sans/pt-sans-v11-latin-700.woff') format('woff'),
+        url('../fonts/pt-sans/pt-sans-v11-latin-700.ttf') format('truetype'),
+        url('../fonts/pt-sans/pt-sans-v11-latin-700.svg#PTSans') format('svg');
+}
+
+/*header-top-panel*/
+.header-logo::before {
+    content: url("/img/texnomart.svg");
+}
+
+form.form-search input {
+    font-family:  'Cuprum', sans-serif;
+    font-size: 17px;
+    line-height: 1.06;
+    color: #fff;
+    background-color: #293449;
+}
+
+.form-search::before {
+    content: url("/img/icon-svg/icon-search.svg");
+}
+
+.header-container a {
+    font-family: 'Cuprum', sans-serif;
+    font-size: 17px;
+    line-height: 1.06;
+    color: #fff;
+    text-decoration: none;
+}
+
+.header-bookmark::before {
+    content: url("/img/icon-svg/icon-bookmark.svg")
+}
+
+.header-cart::before {
+    content: url("/img/icon-svg/icon-cart.svg")
+}
+
+/*header-middle-panel*/
+.header-store-about {
+    font-family: 'Cuprum', sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    line-height: 1.44;
+    color: #ee3643;
+}
+
+.header-contact-telephone {
+    font-family: 'Cuprum', sans-serif;
+    font-size: 21px;
+    line-height: 1;
+    color: #ee3643;
+    text-decoration: none;
+}
+
+.header-contact-telephone::before {
+    content: url("/img/icon-svg/icon-phone.svg");
+}
+
+.header-contact-address {
+    font-family: 'Cuprum', sans-serif;
+    font-size: 14px;
+    line-height: 1.71;
+    text-align: center;
+    color: #32425c;
+}
+
+.header-user-login-online, .header-user-login-logout {
+    font-family: 'Cuprum' , sans-serif;
+    font-size: 21px;
+    line-height: 1;
+    color: #000;
+    text-decoration: none;
+}
+.header-user-login-online::before {
+    content: url("/img/icon-svg/icon-user.svg");
+}
+
+.header-user-login-logout::before {
+    content: url("/img/icon-svg/icon-logout.svg");
+}
+
+div.header-user-items a{
+    font-family: 'Cuprum', sans-serif;
+    font-size: 16px;
+    line-height: 1.13;
+    color: #32425c;
+}
+
+nav.header-nav-panel ul li a {
+    font-family: 'Cuprum', sans-serif;
+    font-size: 17px;
+    line-height: 1;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav.header-nav-panel ul  {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+/* main */
+ul.links-content li a {
+    font-family: 'PTSans', sans-serif;
+    font-size: 13px;
+    line-height: 1.38;
+    color: #000000;
+    text-decoration: none;
+}
+
+ul.links-content {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+ul.links-content li:first-child::before {
+    content: url("/img/icon-svg/icon-home.svg");
+}
+
+ul.links-content li::before {
+    content: url(/img/icon-right-small.svg)
+}
+
+.header-catalog {
+    font-family: 'Cuprum', sans-serif;
+    font-size: 30px;;
+    line-height: 1;
+    color: #32425c;
+}
+
+/* catalog-main-filter-> brand-form */
+fieldset.brand-form legend{
+    font-family: 'PTSans', sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 1.76;
+    color: #000000;
+}
+
+fieldset.brand-form label{
+    font-family: 'PTSans', sans-serif;
+    font-size: 15px;
+    line-height: 1.33;
+    color: #000000;
+}
+
+
