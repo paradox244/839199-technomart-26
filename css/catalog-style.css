@@ -87,7 +87,7 @@ body {
     content: url("/img/texnomart.svg");
 }
 
-form.form-search input {
+.form-search input {
     font-family:  'Cuprum', sans-serif;
     font-size: 17px;
     line-height: 1.06;
@@ -159,14 +159,14 @@ form.form-search input {
     content: url("/img/icon-svg/icon-logout.svg");
 }
 
-div.header-user-items a{
+.header-user-items a{
     font-family: 'Cuprum', sans-serif;
     font-size: 16px;
     line-height: 1.13;
     color: #32425c;
 }
 
-nav.header-nav-panel ul li a {
+.header-nav-panel ul li a {
     font-family: 'Cuprum', sans-serif;
     font-size: 17px;
     line-height: 1;
@@ -174,14 +174,14 @@ nav.header-nav-panel ul li a {
     text-decoration: none;
 }
 
-nav.header-nav-panel ul  {
+.header-nav-panel ul  {
     list-style-type: none;
     margin-left: 0;
     padding-left: 0;
 }
 
 /* main */
-ul.links-content li a {
+.links-content li a {
     font-family: 'PTSans', sans-serif;
     font-size: 13px;
     line-height: 1.38;
@@ -189,17 +189,17 @@ ul.links-content li a {
     text-decoration: none;
 }
 
-ul.links-content {
+.links-content {
     list-style-type: none;
     margin-left: 0;
     padding-left: 0;
 }
 
-ul.links-content li:first-child::before {
+.links-content li:first-child::before {
     content: url("/img/icon-svg/icon-home.svg");
 }
 
-ul.links-content li::before {
+.links-content li::before {
     content: url(/img/icon-right-small.svg)
 }
 
@@ -211,19 +211,77 @@ ul.links-content li::before {
 }
 
 /* catalog-main-filter-> brand-form */
-fieldset.brand-form legend{
+.brand-form legend {
     font-family: 'PTSans', sans-serif;
     font-size: 17px;
     font-weight: bold;
     line-height: 1.76;
-    color: #000000;
+    color: #000;
 }
 
-fieldset.brand-form label{
+.brand-form label {
     font-family: 'PTSans', sans-serif;
     font-size: 15px;
     line-height: 1.33;
+    color: #000;
+}
+
+.type-supply-form legend {
+    font-family: 'PTSans', sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 1.76;
+    letter-spacing: 0.17px;
+    color: #000;
+}
+
+.type-supply-form label{
+    font-family: 'PTSans', sans-serif;
+    font-size: 15px;
+    line-height: 1.33;
+    color: #000;
+}
+
+.panel-form-btn {
+    font-family: 'PTSans', sans-serif;
+    font-size: 13px;
+    line-height: 1.38;
+    text-align: center;
+    color: #000;
+}
+
+/* catalog-goods-column-> */
+.catalog-production {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.catalog-production li h3 {
+    width: 155px;
+    height: 33px;
+    font-family: 'PTSans', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.11;
+    text-align: center;
     color: #000000;
 }
 
+.catalog-production del{
+    font-family: 'PTSans', sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 1.06;
+    text-align: center;
+    color: #999999;
+}
 
+.catalog-product-price {
+    font-family: 'PTSans', sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 1.06;
+    text-align: center;
+    color: #ffffff;
+}
