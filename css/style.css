@@ -200,7 +200,6 @@ section.features a{
 
 
 /* main -> section company*/
-
 section.company h3 {
     font-family: 'Cuprum' , sans-serif;
     font-size: 30px;
@@ -293,6 +292,18 @@ ul.footer-bottom-social  {
     list-style-type: none;
     margin-left: 0;
     padding-left: 0;
+}
+
+.footer-social-vk::before {
+    content: url("/img/icon-svg/icon-vk.svg");
+}
+
+.footer-social-fb::before {
+    content: url("/img/icon-svg/icon-fb.svg");
+}
+
+.footer-social-inst::before {
+    content: url("/img/icon-svg/icon-insta.svg");
 }
 
 .footer-bottom-feedback p {

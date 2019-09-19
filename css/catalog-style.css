@@ -2,6 +2,14 @@ body {
     background-color: green;
 }
 
+.catalog-popup{
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
 /* cuprum */
 @font-face {
     font-family: 'Cuprum';
@@ -284,4 +292,105 @@ body {
     line-height: 1.06;
     text-align: center;
     color: #ffffff;
+}
+
+/* footer -> footer-top-panel*/
+.footer-logo::before {
+    content: url("/img/texnomart-footer.svg");
+}
+
+ul.footer-inner-panel li a{
+    font-family: 'Cuprum' , sans-serif;
+    font-size: 18px;
+    line-height: 1.33;
+    color: #f1f5f7;
+    text-decoration: none;
+}
+
+ul.footer-inner-panel {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+/* footer -> footer-middle-panel*/
+.footer-contacts-address,
+.footer-contact-telephone {
+    font-family: 'Cuprum', serif;
+    font-size: 18px;
+    line-height: 1.33;
+    color: #f3f7f9;
+}
+
+.footer-contact-telephone{
+    text-decoration: none;
+}
+
+.footer-offer-panel li a {
+    font-family: 'Cuprum', sans-serif;
+    font-size: 18px;
+    line-height: 1.33;
+    color: #ffd180;
+    text-decoration: none;
+}
+
+.footer-offer-panel {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.footer-bottom-copyright p {
+    font-family: 'Cuprum' , sans-serif;
+    font-size: 16px;
+    line-height: 1.13;
+    color: #fff;
+}
+
+.footer-bottom-social  {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.footer-social-vk::before {
+    content: url("/img/icon-svg/icon-vk.svg");
+}
+
+.footer-social-fb::before {
+    content: url("/img/icon-svg/icon-fb.svg");
+}
+
+.footer-social-inst::before {
+    content: url("/img/icon-svg/icon-insta.svg");
+}
+
+.footer-bottom-feedback p {
+    font-family: 'Cuprum' , sans-serif;
+    font-size: 16px;
+    line-height: 1.13;
+    color: #fff;
+}
+
+.footer-bottom-feedback a {
+    font-family: 'Cuprum' , sans-serif;
+    font-size: 16px;
+    line-height: 1.13;
+    color: #ffd180;
+    text-decoration: none;
+}
+
+.footer-bottom-design p {
+    font-family: 'Cuprum' , sans-serif;
+    font-size: 16px;
+    line-height: 1.13;
+    color: #fff;
+}
+
+.footer-bottom-design a {
+    font-family: 'Cuprum' , sans-serif;
+    font-size: 16px;
+    line-height: 1.13;
+    color: #ffd180;
+    text-decoration: none;
 }
