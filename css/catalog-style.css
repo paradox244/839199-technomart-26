@@ -10,6 +10,10 @@ body {
     margin: -1px;
 }
 
+button {
+    background-color: red;
+}
+
 /* cuprum */
 @font-face {
     font-family: 'Cuprum';
