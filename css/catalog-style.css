@@ -14,6 +14,17 @@ button {
     background-color: red;
 }
 
+div,
+section,
+a,
+ul,
+li,
+p,
+footer,
+header {
+    outline: 1px solid red;
+}
+
 /* cuprum */
 @font-face {
     font-family: 'Cuprum';
@@ -95,6 +106,10 @@ button {
 }
 
 /*header-top-panel*/
+.header-top-panel {
+    background-color: #293449;
+}
+
 .header-logo::before {
     content: url("/img/texnomart.svg");
 }
@@ -123,11 +138,23 @@ button {
     content: url("/img/icon-svg/icon-bookmark.svg")
 }
 
+.header-cart {
+    background-color: #ee3643;
+}
+
 .header-cart::before {
     content: url("/img/icon-svg/icon-cart.svg")
 }
 
+.header-order {
+    background-color: #63a63e;
+}
+
 /*header-middle-panel*/
+.header-middle-panel {
+    background-color: #f4f7f9;
+}
+
 .header-store-about {
     font-family: 'Cuprum', sans-serif;
     font-size: 16px;
@@ -147,6 +174,7 @@ button {
 .header-contact-telephone::before {
     content: url("/img/icon-svg/icon-phone.svg");
 }
+
 
 .header-contact-address {
     font-family: 'Cuprum', sans-serif;
@@ -190,6 +218,10 @@ button {
     list-style-type: none;
     margin-left: 0;
     padding-left: 0;
+}
+
+.header-nav-panel ul li {
+    background-color: #32425c;
 }
 
 /* main */

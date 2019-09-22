@@ -14,6 +14,17 @@ button {
     background-color: red;
 }
 
+div,
+section,
+a,
+ul,
+li,
+p,
+footer,
+header{
+    outline: 1px solid red;
+}
+
 /* cuprum */
 @font-face {
     font-family: 'Cuprum';
@@ -95,8 +106,38 @@ button {
 }
 
 /*header-top-panel*/
+.header-top-panel {
+    background-color: #293449;
+}
+
+.header-logo{
+    display: inline-block;
+    padding:  15px 55px 11px 55px;
+    background-color: #ee3643;
+}
+
+.header-logo:hover{
+    background-color: #ca2c37;
+}
+
+.header-logo:active{
+    background-color: #ba2732;
+}
+
 .header-logo::before {
-    content: url("/img/texnomart.svg");
+    content: "";
+    background-image: url("/img/texnomart.svg");
+    width: 109px;
+    height: 19px;
+    display: block;
+}
+
+.header-logo:hover {
+    background-color: #ca2c37;
+}
+
+.header-logo:active {
+    background-color: #ba2732;
 }
 
 form.form-search input {
@@ -105,6 +146,14 @@ form.form-search input {
     line-height: 1.06;
     color: #fff;
     background-color: #293449;
+}
+
+.form-search input:hover {
+    background-color: #212a3a;
+}
+
+.form-search input:active {
+    background-color: #fff;
 }
 
 .form-search::before {
@@ -127,7 +176,33 @@ form.form-search input {
     content: url("/img/icon-svg/icon-cart.svg")
 }
 
+.header-bookmark:hover,
+.header-cart:hover {
+    background-color: #212a3a;
+}
+
+.header-bookmark:active,
+.header-cart:active {
+    background-color: #161d29;
+}
+
+.header-order {
+    background-color: #63a63e;
+}
+
+.header-order:hover {
+    background-color: #5fbb2d;
+}
+
+.header-order:active {
+    background-color: #518534;
+}
+
 /*header-middle-panel*/
+.header-middle-panel{
+    background-color: #f4f7f9;
+}
+
 .header-store-about {
     font-family: 'Cuprum', sans-serif;
     font-size: 16px;
@@ -164,8 +239,26 @@ form.form-search input {
     text-decoration: none;
 }
 
+.header-user-login:hover::before {
+    content: url("/img/icon-svg/icon-login-hover.svg");
+}
+
+.header-user-login:active::before {
+    content: url("/img/icon-svg/icon-login-active.svg");
+}
+
 .header-user-login::before {
     content: url("/img/icon-svg/icon-login.svg");
+}
+
+.header-user-login:hover,
+.header-user-registration:hover {
+    color: #ee3643;
+}
+
+.header-user-login:active,
+.header-user-registration:active {
+    color: rgba(0, 0, 0, 0.3);
 }
 
 nav.header-nav-panel ul li a {
@@ -180,6 +273,22 @@ nav.header-nav-panel ul  {
     list-style-type: none;
     margin-left: 0;
     padding-left: 0;
+}
+
+nav.header-nav-panel ul {
+    background-color: #32425c;
+}
+
+nav.header-nav-panel ul li:hover {
+    background-color: #293449;
+}
+
+nav.header-nav-panel ul li:active {
+    background-color: #1d2739;
+}
+
+nav.header-nav-panel ul li a:active {
+    color: rgba(255, 255, 255, 0.5);
 }
 
 /* main -> section features*/
@@ -244,11 +353,26 @@ ul.company-delivery p {
     content: url("/img/texnomart-footer.svg");
 }
 
+.footer-top-panel {
+    background-color: #32425c;
+}
+
 ul.footer-inner-panel li a{
     font-family: 'Cuprum' , sans-serif;
     font-size: 18px;
     line-height: 1.33;
     color: #f1f5f7;
+    text-decoration: none;
+}
+
+
+ul.footer-inner-panel li a:hover{
+    color: #f1f5f7;
+    text-decoration: underline;
+}
+
+ul.footer-inner-panel li a:active{
+    color: rgba(241, 245, 247, 0.5);
     text-decoration: none;
 }
 
@@ -259,6 +383,10 @@ ul.footer-inner-panel {
 }
 
 /* footer -> footer-middle-panel*/
+.footer-middle-panel {
+    background-color: #32425c;
+}
+
 .footer-contacts-address,
 .footer-contact-telephone {
     font-family: 'Cuprum', serif;
@@ -279,10 +407,33 @@ ul.footer-offer-panel li a {
     text-decoration: none;
 }
 
+ul.footer-offer-panel li a:hover,
+.footer-bottom-feedback a:hover,
+.footer-bottom-design a:hover {
+    color: #ffd180;
+    text-decoration: underline;
+}
+
+.footer-bottom-feedback a:active,
+.footer-bottom-design a:active {
+    color: #ee3643;
+    text-decoration: underline;
+}
+
+ul.footer-offer-panel li a:active{
+    color: rgba(255, 209, 128, 0.5);
+    text-decoration: none;
+}
+
 ul.footer-offer-panel {
     list-style-type: none;
     margin-left: 0;
     padding-left: 0;
+}
+
+/* footer -> footer-bottom-panel*/
+.footer-bottom-panel {
+    background-color: #293449;
 }
 
 div.footer-bottom-copyright p {
@@ -298,16 +449,41 @@ ul.footer-bottom-social  {
     padding-left: 0;
 }
 
+.footer-social {
+    position: relative;
+    display: inline-block;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background-color: #212a3a;
+    text-align: center;
+}
+
+.footer-social:hover {
+    background-color: #ee3643;
+}
+
+
+
 .footer-social-vk::before {
     content: url("/img/icon-svg/icon-vk.svg");
+    position: absolute;
+    top: 14px;
+    left: 8px;
 }
 
 .footer-social-fb::before {
     content: url("/img/icon-svg/icon-fb.svg");
+    position: absolute;
+    top: 10px;
+    left: 15px;
 }
 
 .footer-social-inst::before {
     content: url("/img/icon-svg/icon-insta.svg");
+    position: absolute;
+    top: 10px;
+    left: 11px;
 }
 
 .footer-bottom-feedback p {
