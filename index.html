@@ -24,7 +24,7 @@
             src="img/icon-svg/icon-search.svg"
           -->
           <form action="https://echo.htmlacademy.ru" class="form-search" method="post">
-            <input type="search" name="search" id="search" placeholder="Поиск:" required>
+            <input type="search" name="search" id="search" class="inp-form-search" placeholder="Поиск:" required>
           </form>
         </div>
         <a href="#" class="header-bookmark">
@@ -68,27 +68,27 @@
         <a href="#" class="header-user-registration">Регистрация</a>
       </div>
       <nav class="header-nav-panel">
-        <ul>
-          <li>
-            <a href="index.html">Главная</a>
+        <ul class="header-ul-panel">
+          <li class="header-ul-panel-li">
+            <a href="index.html" class="header-ul-panel-links">Главная</a>
           </li>
-          <li>
-            <a href="#">Компания</a>
+          <li class="header-ul-panel-li">
+            <a href="#" class="header-ul-panel-links">Компания</a>
           </li>
-          <li>
-            <a href="catalog.html">Каталог</a>
+          <li class="header-ul-panel-li">
+            <a href="catalog.html" class="header-ul-panel-links">Каталог</a>
           </li>
-          <li>
-            <a href="#">Новости</a>
+          <li class="header-ul-panel-li">
+            <a href="#" class="header-ul-panel-links">Новости</a>
           </li>
-          <li>
-            <a href="#">Спецпредложения</a>
+          <li class="header-ul-panel-li">
+            <a href="#" class="header-ul-panel-links">Спецпредложения</a>
           </li>
-          <li>
-            <a href="#">Доставка</a>
+          <li class="header-ul-panel-li">
+            <a href="#" class="header-ul-panel-links">Доставка</a>
           </li>
-          <li>
-            <a href="#">Контакты</a>
+          <li class="header-ul-panel-li">
+            <a href="#" class="header-ul-panel-links">Контакты</a>
           </li>
         </ul>
       </nav>
@@ -97,7 +97,7 @@
   <main>
     <section class="features">
       <h2 class="visually-hidden">Секция с предложением</h2>
-      <div class="features-materials">
+      <div class="features-materials features-blocks-size">
         <h3 class="features-title">Материалы</h3>
         <a href="#" class="features-subtitle">На любой вкус</a>
         <!--
@@ -105,11 +105,11 @@
           src="img/icon-svg/material.svg"
         -->
       </div>
-      <div class="features-tool">
+      <div class="features-tool features-blocks-size">
         <h3 class="features-title">Инструмент</h3>
         <a href="#" class="features-subtitle">На все случаи</a>
         <!--
-          тут должен быть иконка Инструмент
+          тут должна быть иконка Инструмент
           src="img/icon-svg/instrument.svg"
         -->
       </div>
@@ -165,7 +165,7 @@
         </button>
         <a href="#" class="slider-button">Открыть каталог</a>
       </div>
-      <div class="features-technics">
+      <div class="features-technics features-blocks-size">
         <h3 class="features-title">Техника</h3>
         <a href="#" class="features-subtitle">Для стройки</a>
         <!--
@@ -173,7 +173,7 @@
           src="img/icon-svg/technics.svg"
         -->
       </div>
-      <div class="features-discount">
+      <div class="features-discount features-blocks-size">
         <h3 class="features-title">Скидки 50%</h3>
         <a href="#" class="features-subtitle">На 350 товаров</a>
         <!--
@@ -181,7 +181,7 @@
           src="img/icon-svg/discount.svg"
         -->
       </div>
-      <div class="features-delivery">
+      <div class="features-delivery features-blocks-size">
         <h3 class="features-title">Доставка</h3>
         <a href="#" class="features-subtitle">Бесплатно</a>
         <!--
@@ -197,7 +197,7 @@
         <a href="#" class="popular-subtitle">Все популярные товары</a>
       </div>
       <ul class="popular-catalog-products">
-        <li>
+        <li class="popular-catalog-products-li">
           <img src="img/content-images/bfg-9000.jpg" alt="Перфоратор BOSCH BFG 9000" width="218" height="170">
           <!--
             тут должна быть картинка Перфоратор BOSCH BFG 9000
@@ -205,7 +205,7 @@
           -->
           <h3 class="catalog-product-firm">Перфоратор BOSCH BFG 9000</h3>
           <span class="catalog-product-outdate">
-            <del>32500 Р.</del>
+            <del class="catalog-product-outdate-del">32500 Р.</del>
           </span>
           <span class="catalog-product-price">25500 Р.</span>
           <div class="catalog-popup">
@@ -213,7 +213,7 @@
             <a href="#" class="catalog-popup-bookmark">В закладки</a>
           </div>
         </li>
-        <li>
+        <li class="popular-catalog-products-li">
           <img src="img/content-images/bfg-3000.jpg" alt="Перфоратор BOSCH BFG 3000" width="218" height="170">
           <!--
             тут должна быть картинка Перфоратор BOSCH BFG 3000
@@ -221,7 +221,7 @@
           -->
           <h3 class="catalog-product-firm">Перфоратор BOSCH BFG 3000</h3>
           <span class="catalog-product-outdate">
-            <del>22500 Р.</del>
+            <del class="catalog-product-outdate-del">22500 Р.</del>
           </span>
           <span class="catalog-product-price">15500 Р.</span>
           <div class="catalog-popup">
@@ -229,7 +229,7 @@
             <a href="#" class="catalog-popup-bookmark">В закладки</a>
           </div>
         </li>
-        <li>
+        <li class="popular-catalog-products-li">
           <img src="img/content-images/bfg-6000.jpg" alt="Перфоратор BOSCH BFG 6000" width="218" height="170">
           <!--
             тут должна быть картинка Перфоратор BOSCH BFG 6000
@@ -237,7 +237,7 @@
           -->
           <h3 class="catalog-product-firm">Перфоратор BOSCH BFG 6000</h3>
           <span class="catalog-product-outdate">
-            <del>30500 Р.</del>
+            <del class="catalog-product-outdate-del">30500 Р.</del>
           </span>
           <span class="catalog-product-price">25500 Р.</span>
           <div class="catalog-popup">
@@ -245,7 +245,7 @@
             <a href="#" class="catalog-popup-bookmark">В закладки</a>
           </div>
         </li>
-        <li>
+        <li class="popular-catalog-products-li">
           <img src="img/content-images/bfg-2000.jpg" alt="Перфоратор BOSCH BFG 2000" width="218" height="170">
           <!--
             тут должна быть картинка Перфоратор BOSCH BFG 2000
@@ -425,26 +425,27 @@
   <footer>
     <div class="footer-top-panel">
       <a href="index.html" class="footer-logo">
+        <span class="visually-hidden"> Логотип Техномарт</span>
         <!--
           тут должен быть логотип Техномарт
           src="img/texnomart.png"
         -->
       </a>
       <ul class="footer-inner-panel">
-        <li>
-          <a href="#">Компания</a>
+        <li class="footer-inner-panel-li">
+          <a href="#" class="footer-inner-panel-links">Компания</a>
         </li>
-        <li>
-          <a href="#">Новости</a>
+        <li class="footer-inner-panel-li">
+          <a href="#" class="footer-inner-panel-links">Новости</a>
         </li>
-        <li>
-          <a href="#">Каталог</a>
+        <li class="footer-inner-panel-li">
+          <a href="#" class="footer-inner-panel-links">Каталог</a>
         </li>
-        <li>
-          <a href="#">Доставка</a>
+        <li class="footer-inner-panel-li">
+          <a href="#" class="footer-inner-panel-links">Доставка</a>
         </li>
-        <li>
-          <a href="#">Контакты</a>
+        <li class="footer-inner-panel-li">
+          <a href="#" class="footer-inner-panel-links">Контакты</a>
         </li>
       </ul>
     </div>
@@ -454,29 +455,30 @@
         <a href="tel:+78125550555" class="footer-contact-telephone">+7 (812) 555-05-55</a>
       </div>
       <ul class="footer-offer-panel">
-        <li>
-          <a href="#">Материалы</a>
+        <li class=footer-offer-panel-li"">
+          <a href="#" class="footer-offer-panel-links">Материалы</a>
         </li>
-        <li>
-          <a href="#">Техника</a>
+        <li class="footer-offer-panel-li">
+          <a href="#" class="footer-offer-panel-links">Техника</a>
         </li>
-        <li>
-          <a href="#">Инструмент</a>
+        <li class="footer-offer-panel-li">
+          <a href="#" class="footer-offer-panel-links">Инструмент</a>
         </li>
-        <li>
-          <a href="#">Спецпредложения</a>
+        <li class="footer-offer-panel-li">
+          <a href="#" class="footer-offer-panel-links">Спецпредложения</a>
         </li>
       </ul>
     </div>
     <div class="footer-bottom-panel">
       <div class="footer-bottom-panel-inner">
         <div class="footer-bottom-copyright">
-          <p>© 2010-2019 Компания «Техномарт»</p>
-          <p>Все права защищены</p>
+          <p class="footer-bottom-copyright-text">© 2010-2019 Компания «Техномарт»</p>
+          <p class="footer-bottom-copyright-text">Все права защищены</p>
         </div>
         <ul class="footer-bottom-social">
           <li>
             <a href="#" class="footer-social-vk footer-social">
+              <span class="visually-hidden">Иконка Вконтакте</span>
               <!--
                 тут должна быть иконка Вконтакте
                 src="img/icon-svg/icon-vk.svg"
@@ -485,6 +487,7 @@
           </li>
           <li>
             <a href="#" class="footer-social-fb footer-social">
+              <span class="visually-hidden">Иконка Фейсбук</span>
               <!--
                 тут должна быть иконка Фейсбук
                 src="img/icon-svg/icon-fb.svg"
@@ -493,6 +496,7 @@
           </li>
           <li>
             <a href="#" class="footer-social-inst footer-social">
+              <span class="visually-hidden">Иконка Инстаграм</span>
               <!--
                 тут должна быть иконка Инстаграм
                 src="img/icon-svg/icon-insta.svg"

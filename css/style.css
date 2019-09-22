@@ -1,31 +1,4 @@
-body {
-    background-color: green;
-}
-
-.visually-hidden {
-    position: absolute;
-    clip: rect(0 0 0 0);
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-}
-
-button {
-    background-color: red;
-}
-
-div,
-section,
-a,
-ul,
-li,
-p,
-footer,
-header{
-    outline: 1px solid red;
-}
-
-/* cuprum */
+/*************** cuprum ***************/
 @font-face {
     font-family: 'Cuprum';
     font-style: normal;
@@ -65,7 +38,7 @@ header{
         url('../fonts/cuprum/cuprum-v11-latin_cyrillic-700.svg#Cuprum') format('svg');
 }
 
-/* pt-sans */
+/*************** pt-sans ***************/
 @font-face {
     font-family: 'PT Sans';
     font-style: normal;
@@ -105,7 +78,35 @@ header{
         url('../fonts/pt-sans/pt-sans-v11-latin-700.svg#PTSans') format('svg');
 }
 
-/*header-top-panel*/
+
+body {
+    font-family: 'Cuprum', Arial, sans-serif;
+}
+
+div,
+button,
+section,
+a,
+ul,
+li,
+h1,
+h2,
+h3,
+p,
+footer,
+header{
+    outline: 1px solid red;
+}
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
+/***************************header-top-panel***************************/
 .header-top-panel {
     background-color: #293449;
 }
@@ -140,19 +141,18 @@ header{
     background-color: #ba2732;
 }
 
-form.form-search input {
-    font-family:  'Cuprum', sans-serif;
+.inp-form-search {
     font-size: 17px;
     line-height: 1.06;
     color: #fff;
     background-color: #293449;
 }
 
-.form-search input:hover {
+.inp-form-search:hover {
     background-color: #212a3a;
 }
 
-.form-search input:active {
+.inp-form-search:active {
     background-color: #fff;
 }
 
@@ -160,8 +160,9 @@ form.form-search input {
     content: url("/img/icon-svg/icon-search.svg");
 }
 
-.header-container a {
-    font-family: 'Cuprum', sans-serif;
+.header-bookmark,
+.header-cart,
+.header-order {
     font-size: 17px;
     line-height: 1.06;
     color: #fff;
@@ -198,13 +199,12 @@ form.form-search input {
     background-color: #518534;
 }
 
-/*header-middle-panel*/
-.header-middle-panel{
+/***************************header-middle-panel***************************/
+.header-middle-panel {
     background-color: #f4f7f9;
 }
 
 .header-store-about {
-    font-family: 'Cuprum', sans-serif;
     font-size: 16px;
     font-style: italic;
     line-height: 1.44;
@@ -212,11 +212,11 @@ form.form-search input {
 }
 
 .header-contact-telephone {
-    font-family: 'Cuprum', sans-serif;
     font-size: 21px;
     line-height: 1;
     color: #ee3643;
     text-decoration: none;
+    border: solid 3px #ffffff;
 }
 
 .header-contact-telephone::before {
@@ -224,15 +224,14 @@ form.form-search input {
 }
 
 .header-contact-address {
-    font-family: 'Cuprum', sans-serif;
     font-size: 14px;
     line-height: 1.71;
     text-align: center;
     color: #32425c;
 }
 
-.header-middle-user a{
-    font-family: 'Cuprum', sans-serif;
+.header-user-login,
+.header-user-registration {
     font-size: 21px;
     line-height: 1;
     color: #000;
@@ -261,47 +260,68 @@ form.form-search input {
     color: rgba(0, 0, 0, 0.3);
 }
 
-nav.header-nav-panel ul li a {
-    font-family: 'Cuprum', sans-serif;
+.header-ul-panel-links {
     font-size: 17px;
     line-height: 1;
     color: #fff;
     text-decoration: none;
 }
 
-nav.header-nav-panel ul  {
+.header-ul-panel {
     list-style-type: none;
     margin-left: 0;
     padding-left: 0;
 }
 
-nav.header-nav-panel ul {
+.header-ul-panel {
     background-color: #32425c;
 }
 
-nav.header-nav-panel ul li:hover {
+.header-ul-panel-li:hover {
     background-color: #293449;
 }
 
-nav.header-nav-panel ul li:active {
+.header-ul-panel-li:active {
     background-color: #1d2739;
 }
 
-nav.header-nav-panel ul li a:active {
+.header-ul-panel-links:active {
     color: rgba(255, 255, 255, 0.5);
 }
 
-/* main -> section features*/
-section.features h3 {
-    font-family: 'Cuprum' , sans-serif;
+/*************************** main -> section features***************************/
+.features {
+    background-color: #fff;
+}
+
+.features-materials {
+    background-color: #ffbf47;
+}
+
+.features-tool {
+    background-color: #3bbce3;
+}
+
+.features-technics {
+    background-color: #dc91d8;
+}
+
+.features-discount {
+    background-color: #8ed78f;
+}
+
+.features-delivery {
+    background-color: #ffc047;
+}
+
+.features-title {
     font-size: 24px;
     font-weight: 700;
     line-height: 1.25;
     color: #fff;
 }
 
-section.features a{
-    font-family: 'Cuprum' , sans-serif;
+.features-subtitle {
     font-size: 14px;
     line-height: 1.29;
     text-align: center;
@@ -310,45 +330,246 @@ section.features a{
     text-transform: uppercase;
 }
 
+.features-subtitle:hover {
+    background-color: #000;
+    opacity: 0.2;
+}
 
+.features-subtitle:active {
+    background-color: #000;
+    opacity: 0.3;
+}
 
-/* main -> section company*/
-section.company h3 {
-    font-family: 'Cuprum' , sans-serif;
+.features-slider-title {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.slider-button {
+    background-color: #ee3643;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    line-height: 1.29;
+}
+
+.slider-button:hover {
+    background-color: #ca2c37;
+}
+
+.slider-button:active {
+    background-color: #ba2732;
+}
+
+/***************************main -> section popular-products***************************/
+.popular-products,
+.all-header-popular {
+    background-color: #f9f5f0;
+}
+
+.popular-title {
     font-size: 30px;
     line-height: 1;
-    color: #000;
+    color: #32425c;
 }
 
-section.company a {
-    font-family: 'Cuprum', sans-serif;
-    font-size: 14px;
-    line-height: 1.29;
-    text-align: center;
+.popular-subtitle {
+    background-color: #ee3643;
     color: #fff;
     text-transform: uppercase;
     text-decoration: none;
 }
 
-section.company p {
-    font-family: 'PTsans', sans-serif;
+.popular-subtitle:hover {
+    background-color: #ca2c37;
+}
+
+.popular-subtitle:active {
+    background-color: #ba2732;
+}
+
+.popular-catalog-products {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.popular-catalog-products-li {
+    width: 220px;
+    border: solid 1px #eaeaea;
+    background-color: #ffffff;
+}
+
+.catalog-product-firm {
+    font-family: 'PT Sans', Arial, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.11;
+    text-align: center;
+    color: #000000;
+}
+
+.catalog-product-outdate-del {
+    font-family: 'PT Sans', Arial, sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 1.06;
+    text-align: center;
+    color: #a9a9a9;
+}
+
+.catalog-product-price {
+    font-family: 'PT Sans', Arial, sans-serif;
+    background-color: #ef3341;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 1.06;
+    text-align: center;
+    color: #ffffff;
+}
+
+.catalog-popup-buy {
+    background-color: #63a63e;
+    color: #fff;
+    font-size: 14px;
+    line-height: 1.29;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.catalog-popup-buy:hover {
+    background-color: #5fbb2d;
+}
+
+.catalog-popup-buy:active {
+    background-color: #518534;
+}
+
+.catalog-popup-bookmark {
+    font-size: 14px;
+    line-height: 1.29;
+    text-align: center;
+    color: #32425c;
+    border: solid 3px #63a63e;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.catalog-popup-bookmark:hover {
+    border: solid 3px #32425c;
+}
+
+.catalog-popup-bookmark:active {
+    opacity: 0.3;
+    border: solid 3px #32425c;
+}
+
+/***************************main -> section popular-brands***************************/
+
+.popular-brands {
+    background-color: #fff;
+}
+
+.services-title {
+    font-size: 30px;
+    line-height: 1;
+    color: #000000;
+}
+
+.services-info {
+    font-family: 'PT Sans', Arial, sans-serif;
     font-size: 13px;
     line-height: 1.85;
     color: #000;
 }
 
-ul.company-delivery p {
-    font-family: 'Cuprum', sans-serif;
+.button-slider-controls {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.btn-slider-controls {
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 1.43;
+    color: #32425c;
+}
+
+.advantage-details-title {
+    font-size: 36px;
+    line-height: 1;
+    color: #32425c;
+}
+
+.advantage-details-info {
+    font-family: 'PT Sans', Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.85;
+    color: #000000;
+}
+
+/***************************main -> section service***************************/
+
+.service {
+    background-color: #f4f7f9;
+}
+
+/***************************main -> section company***************************/
+
+.company {
+    background-color: #fff;
+}
+
+.company-caption {
+    font-size: 30px;
+    line-height: 1;
+    color: #000;
+}
+
+.company-about,
+.company-message {
+    font-size: 14px;
+    line-height: 1.29;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    width: 220px;
+    height: 38px;
+    background-color: #ee3643;
+}
+
+.company-info,
+.company-contacts-info {
+    font-family: 'PTsans', Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.85;
+    color: #000;
+}
+
+.company-delivery-firm {
     font-size: 18px;
     line-height: 1.11;
     color: #000;
 }
+.company-delivery {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
 
 .company-contacts-form {
     display:none
 }
 
-/* footer -> footer-top-panel*/
+/***************************footer -> footer-top-panel***************************/
 .footer-logo::before {
     content: url("/img/texnomart-footer.svg");
 }
@@ -357,8 +578,7 @@ ul.company-delivery p {
     background-color: #32425c;
 }
 
-ul.footer-inner-panel li a{
-    font-family: 'Cuprum' , sans-serif;
+.footer-inner-panel-links {
     font-size: 18px;
     line-height: 1.33;
     color: #f1f5f7;
@@ -366,30 +586,29 @@ ul.footer-inner-panel li a{
 }
 
 
-ul.footer-inner-panel li a:hover{
+.footer-inner-panel-links:hover {
     color: #f1f5f7;
     text-decoration: underline;
 }
 
-ul.footer-inner-panel li a:active{
+.footer-inner-panel-links:active {
     color: rgba(241, 245, 247, 0.5);
     text-decoration: none;
 }
 
-ul.footer-inner-panel {
+.footer-inner-panel {
     list-style-type: none;
     margin-left: 0;
     padding-left: 0;
 }
 
-/* footer -> footer-middle-panel*/
+/*************************** footer -> footer-middle-panel ***************************/
 .footer-middle-panel {
     background-color: #32425c;
 }
 
 .footer-contacts-address,
 .footer-contact-telephone {
-    font-family: 'Cuprum', serif;
     font-size: 18px;
     line-height: 1.33;
     color: #f3f7f9;
@@ -399,17 +618,16 @@ ul.footer-inner-panel {
     text-decoration: none;
 }
 
-ul.footer-offer-panel li a {
-    font-family: 'Cuprum', sans-serif;
+.footer-offer-panel-links {
     font-size: 18px;
     line-height: 1.33;
     color: #ffd180;
     text-decoration: none;
 }
 
-ul.footer-offer-panel li a:hover,
-.footer-bottom-feedback a:hover,
-.footer-bottom-design a:hover {
+.footer-offer-panel-links:hover,
+.footer-feedback-mail:hover,
+.footer-mail-design:hover {
     color: #ffd180;
     text-decoration: underline;
 }
@@ -420,30 +638,29 @@ ul.footer-offer-panel li a:hover,
     text-decoration: underline;
 }
 
-ul.footer-offer-panel li a:active{
+.footer-offer-panel-links:active {
     color: rgba(255, 209, 128, 0.5);
     text-decoration: none;
 }
 
-ul.footer-offer-panel {
+.footer-offer-panel {
     list-style-type: none;
     margin-left: 0;
     padding-left: 0;
 }
 
-/* footer -> footer-bottom-panel*/
+/***************************footer -> footer-bottom-panel***************************/
 .footer-bottom-panel {
     background-color: #293449;
 }
 
-div.footer-bottom-copyright p {
-    font-family: 'Cuprum' , sans-serif;
+.footer-bottom-copyright-text {
     font-size: 16px;
     line-height: 1.13;
     color: #fff;
 }
 
-ul.footer-bottom-social  {
+.footer-bottom-social  {
     list-style-type: none;
     margin-left: 0;
     padding-left: 0;
@@ -486,30 +703,15 @@ ul.footer-bottom-social  {
     left: 11px;
 }
 
-.footer-bottom-feedback p {
-    font-family: 'Cuprum' , sans-serif;
+.footer-bottom-feedback-text,
+.footer-bottom-design-text {
     font-size: 16px;
     line-height: 1.13;
     color: #fff;
 }
 
-.footer-bottom-feedback a {
-    font-family: 'Cuprum' , sans-serif;
-    font-size: 16px;
-    line-height: 1.13;
-    color: #ffd180;
-    text-decoration: none;
-}
-
-.footer-bottom-design p {
-    font-family: 'Cuprum' , sans-serif;
-    font-size: 16px;
-    line-height: 1.13;
-    color: #fff;
-}
-
-.footer-bottom-design a {
-    font-family: 'Cuprum' , sans-serif;
+.footer-feedback-mail,
+.footer-mail-design {
     font-size: 16px;
     line-height: 1.13;
     color: #ffd180;
