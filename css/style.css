@@ -339,6 +339,10 @@ header{
     background-color: #32425c;
 }
 
+.header-ul-panel-li {
+    padding: 18px 31px;
+}
+
 .header-ul-panel-li:hover {
     background-color: #293449;
 }
@@ -353,11 +357,14 @@ header{
 
 .header-nav-panel {
     width: 100%;
+    box-shadow: inset 0px -5px 0 0 var(#293449);
 }
 /*************************** main -> section features***************************/
-/* .main-center-container {
 
-} */
+.features-blocks-size {
+    width: 300px;
+    min-height: 123px;
+}
 
 .features {
     background-color: #fff;
