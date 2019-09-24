@@ -107,11 +107,21 @@ header{
 }
 
 /***************************header-top-panel***************************/
-.header-flex-container {
-    min-height: 320px;
+.header-top-flex-container {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #293449;
+}
+
+.header-middle-flex-container {
+    width: 100%;
+    min-height: 273px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f7f9;
 }
 
 .header-top-panel {
@@ -122,6 +132,7 @@ header{
     display: flex;
     flex-direction: row;
     align-items: center;
+    align-content: stretch;
     min-width: 940px;
     min-height: 47px;
     background-color: #293449;
@@ -163,6 +174,10 @@ header{
     line-height: 1.06;
     color: #fff;
     background-color: #293449;
+    width: 270px;
+    min-height: 46px;
+    padding: 12px 0 12px 49px;
+    vertical-align: baseline;
 }
 
 .inp-form-search:hover {
@@ -173,8 +188,18 @@ header{
     background-color: #fff;
 }
 
+.label-search {
+    position: relative;
+}
+
 .label-search::before {
-    content: url("/img/icon-svg/icon-search.svg");
+    top: 12px;
+    left: -252px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    cursor: pointer;
+    color: #6a7180;
 }
 
 .header-bookmark,
@@ -185,6 +210,9 @@ header{
     color: #fff;
     text-decoration: none;
     text-align: right;
+    width: 150px;
+    padding: 13px 0 13px 0;
+    text-align: center;
 }
 
 .header-bookmark::before {
@@ -266,6 +294,7 @@ header{
     color: #000;
     text-decoration: none;
     padding: 14px 27px 11px 13px;
+    background-color: #fff;
 }
 
 .header-user-login:hover::before {
@@ -322,7 +351,14 @@ header{
     color: rgba(255, 255, 255, 0.5);
 }
 
+.header-nav-panel {
+    width: 100%;
+}
 /*************************** main -> section features***************************/
+/* .main-center-container {
+
+} */
+
 .features {
     background-color: #fff;
 }
@@ -399,7 +435,7 @@ header{
 }
 
 /***************************main -> section popular-products***************************/
-.popular-products,
+
 .all-header-popular {
     background-color: #f9f5f0;
 }
@@ -522,19 +558,39 @@ header{
 }
 
 .button-slider-controls {
+
     list-style-type: none;
     margin-left: 0;
     padding-left: 0;
 }
 
-.btn-slider-controls {
+.btn-slider-controls  {
+    text-align: left;
+    width: 240px;
+    min-height: 61px;
     font-size: 21px;
     font-weight: bold;
     line-height: 1.43;
-    color: #32425c;
+    color: #ffffff;
+    border: none;
+    background-color: #32425c;
+    box-shadow: 0px 1px 0 0 var(--dark),
+    inset 0px 1px 0 0 #405069;
+    border-bottom: 1px solid #293449;
+    border-top: 1px solid #405069;
+}
+
+.btn-slider-controls:hover {
+    background-color: #293449;
+}
+
+.btn-slider-controls:active {
+    background-color: #fff;
+    color:#32425c;
 }
 
 .advantage-details-title {
+    text-transform: uppercase;
     font-size: 36px;
     line-height: 1;
     color: #32425c;
