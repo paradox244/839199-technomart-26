@@ -279,14 +279,21 @@ header{
     color: #32425c;
 }
 
+.header-middle-user {
+    margin-top: 22px;
+}
+
 .header-user-login-online,
 .header-user-login-logout {
+    background-color: #fff;
+    padding: 13px 0px 14px 0;
     font-size: 21px;
     line-height: 1;
     color: #000;
     text-decoration: none;
 }
 .header-user-login-online::before {
+    padding-left: 13px;
     content: url("/img/icon-svg/icon-user.svg");
 }
 
@@ -296,11 +303,17 @@ header{
 }
 
 .header-user-login-logout::before {
+    padding-right: 7px;
     content: url("/img/icon-svg/icon-logout.svg");
 }
 
 .header-user-login-logout:hover::before {
     content: url("/img/icon-svg/icon-logout-hover.svg");
+}
+
+.header-user-items {
+    margin-top: 25px;
+    margin-left: 18px;
 }
 
 .header-user-orders,
@@ -362,6 +375,10 @@ header{
     box-shadow: inset 0px -5px 0 0 var(#293449);
 }
 /*************** main> center-container ***************/
+main {
+    text-transform: uppercase;
+}
+
 .top-main-center-container {
     width: 940px;
     margin: 0 auto;
@@ -550,6 +567,7 @@ header{
 }
 
 .catalog-product-firm {
+    text-transform: none;
     width: 155px;
     min-height: 33px;
     font-family: 'PT Sans', Arial, sans-serif;
@@ -638,7 +656,7 @@ header{
 }
 
 .last-btn {
-    margin-left: 59px;
+    margin-left: 50px;
 }
 
 .catalog-paginator-btn:first-child {
@@ -690,6 +708,7 @@ header{
 
 .perforators-description {
     font-family: 'PT Sans', Arial, sans-serif;
+    text-transform: none;
     font-size: 13px;
     line-height: 24px;
     padding-bottom: 73px;
