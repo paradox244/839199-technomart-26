@@ -454,6 +454,8 @@ main {
     font-family: 'PT Sans', Arial , sans-serif;
     font-size: 13px;
     line-height: 1.38;
+    width: 220px;
+    padding: 0 0 0 0;
     color: #000000;
     background-color: #f7f3ec;
 }
@@ -514,6 +516,7 @@ main {
 }
 
 .catalog-filter-sorting {
+    padding-left: 19px;
     font-family: 'PT Sans', Arial, sans-serif;
     font-size: 13px;
     line-height: 1.38;
