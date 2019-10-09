@@ -86,7 +86,7 @@ body {
     font-family: 'Cuprum', Arial, sans-serif;
 }
 
-/* div,
+div,
 button,
 section,
 a,
@@ -99,7 +99,7 @@ p,
 footer,
 header{
     outline: 1px solid red;
-} */
+}
 
 .visually-hidden {
     position: absolute;
@@ -125,7 +125,7 @@ header{
 
 .header-middle-flex-container {
     width: 100%;
-    min-height: 273px;
+    min-height: 276px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -163,12 +163,12 @@ header{
 
 .header-logo::before {
     content: "";
+    display: block;
     background-image: url("../img/texnomart.svg");
     background-repeat: no-repeat;
     background-size: 109px 19px;
     width: 109px;
     height: 19px;
-    display: block;
     margin: 0 auto;
 }
 
@@ -471,7 +471,7 @@ header{
 
 .features {
     width: 940px;
-    margin-top: 65px;
+    margin-top: 62px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -722,7 +722,8 @@ header{
 }
 
 .popular-catalog-products-li  .flag {
-    background: url("../img/new-flag.png") no-repeat 0 0;
+    background: url("../img/new-flag.png") 0 0;
+    background-repeat: no-repeat;
 }
 
 .catalog-product-firm {
