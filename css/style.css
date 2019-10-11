@@ -114,6 +114,10 @@ header{
     margin: 0 auto;
 }
 
+.service-about {
+    margin-top: 21px;
+}
+
 /***************************header-top-panel***************************/
 .header-top-flex-container {
     width: 100%;
@@ -442,7 +446,7 @@ header{
 }
 
 .header-ul-panel-li {
-    padding: 21px 31px;
+    padding: 19px 31px;
 }
 
 .header-ul-panel-li:hover {
@@ -753,7 +757,7 @@ header{
 .catalog-product-price {
     font-family: 'PT Sans', Arial, sans-serif;
     background-color: #ef3341;
-    padding: 11px 30px;
+    padding: 10px 35px;
     margin-bottom: 21px;
     font-size: 17px;
     font-weight: bold;
@@ -765,8 +769,8 @@ header{
 .popular-catalog-products-li .catalog-product-price::after {
     content: "";
     position: absolute;
-    top: 259px;
-    right: 8px;
+    top: 258px;
+    right: 16px;
     width: 0;
     height: 0;
     border: 20px solid #fff;
@@ -1015,7 +1019,7 @@ header{
 .company-caption {
     text-transform: uppercase;
     font-weight: 400;
-    margin-bottom: 25px;
+    margin-bottom: 28px;
     font-size: 30px;
     line-height: 1;
     color: #000;
@@ -1037,7 +1041,7 @@ header{
 .company-message {
     display: block;
     width: 300px;
-    margin: 33px 0 0 0;
+    margin: 34px 0 0 0;
 }
 
 .company-contacts-maps {
@@ -1050,6 +1054,7 @@ header{
 }
 
 .company-info,
+.company-info-delivery,
 .company-contacts-info {
     display: flex;
     flex-direction: column;
@@ -1061,11 +1066,15 @@ header{
 
 .company-contacts-info {
     width: 179px;
-    margin: 26px 0 31px 0;
+    margin: 28px 0 31px 0;
 }
 
 .company-info {
     margin:0 0 23px 0;
+}
+
+.company-info-delivery {
+    margin: 0 0 21px 0;
 }
 
 .company-delivery-firm {
@@ -1076,9 +1085,17 @@ header{
 
 .company-delivery {
     list-style-type: none;
-    margin: 0 0 40px 0px;
-    padding-left: 30px;
+    margin: 0 0 38px 0px;
+    padding-left: 36px;
     position: relative;
+}
+
+.company-delivery-li-second {
+    margin: 21px 0 0 0;
+}
+
+.company-delivery-li-third {
+    margin: 20px 0 0 0;
 }
 
 .company-delivery-li-first::before {
@@ -1088,7 +1105,7 @@ header{
     background: #FB565A;
     position: absolute;
     left: 0;
-    top: 8px;
+    top: 10px;
 }
 
 .company-delivery-li-second:before {
@@ -1098,7 +1115,7 @@ header{
     background: #FB565A;
     position: absolute;
     left: 0;
-    top: 48px;
+    top: 50px;
 }
 
 .company-delivery-li-third:before {
@@ -1108,7 +1125,7 @@ header{
     background: #FB565A;
     position: absolute;
     left: 0;
-    top: 84px;
+    top: 89px;
 }
 
 .company-contacts-form {
@@ -1116,7 +1133,7 @@ header{
 }
 
 .company-description {
-    margin: 50px 0 87px 0;
+    margin: 41px 0 87px 0;
     width: 540px;
 }
 
@@ -1127,7 +1144,7 @@ header{
 
 .company-contacts-title {
     text-transform: uppercase;
-    margin: 30px 0 0 0;
+    margin: 21px 0 0 0;
     font-weight: 400;
     font-size: 30px;
     line-height: 1;
