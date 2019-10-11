@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Thimble Sample</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <section>
+    <div class="slider">
+      <input type="radio" id="btn-1" name="toggle" checked>
+      <input type="radio" id="btn-2" name="toggle">
+      <div class="btn-controls-next-prev">
+        <label for="btn-1" class="btn-next"></label>
+        <label for="btn-2" class="btn-prev"></label>
+      </div>
+      <div class="slider-inner">
+        <div class="slider-slides">
+          <img src="http://placehold.it/620x266" alt="Кекс смотрит на еду">
+          <img src="http://placehold.it/620x266" alt="Кекс смотрит на еду">
+        </div>
+      </div>
+      <div class="slider-controls-btn">
+        <label for="btn-1"></label>
+        <label for="btn-2"></label>
+      </div>
+      <a href="#" class="slider-button">Открыть каталог</a>
+    </div>
+  </section>
+
+
+  <script>
+    $(document).ready(function () {
+      $('h1').fadeOut(800).fadeIn(800);
+      $('p').delay(400).fadeOut(800).fadeIn(400);
+    });
+  </script>
+</body>
+
+</html>
