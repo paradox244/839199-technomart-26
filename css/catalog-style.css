@@ -1485,3 +1485,109 @@ footer p{
     color: #ffd180;
     text-decoration: none;
 }
+
+/***************************product-add-popap***************************/
+.product-add-popap {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -200px;
+    margin-left: -300px;
+    width: 620px;
+    padding-top: 64px;
+    border-top: solid 7px #ee3643;
+    background-color: #fff;
+    box-shadow: 0px 20px 40px 0 rgba(41, 52, 73, 0.75);
+}
+
+.product-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.product-close::before {
+    position: absolute;
+    display: block;
+    content: "";
+    background-image: url("../img/icon-svg/form-close.svg");
+    background-repeat: no-repeat;
+    background-size: 21px 21px;
+    width: 21px;
+    height: 21px;
+    right: 9px;
+    top: 9px;
+}
+
+.product-inner-popap {
+    font-family: 'Cuprum';
+    display: inline-block;
+    margin: 0 0 69px 180px;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1;
+    text-align: center;
+    color: #000;
+}
+
+.product-inner-popap::before {
+    position: absolute;
+    display: block;
+    content: "";
+    background-image: url("../img/icon-svg/modal-check.svg");
+    background-repeat: no-repeat;
+    background-size: 66px 66px;
+    width: 66px;
+    height: 66px;
+    top: 48px;
+    left: 81px;
+}
+
+.product-add-btn {
+    display: flex;
+    justify-content: center;
+    padding-top: 37px;
+    padding-bottom: 37px;
+    background-color: #f1f1f1;
+}
+
+.product-order-btn,
+.product-cancel-btn {
+    font-family: 'Cuprum';
+    text-transform: uppercase;
+    border: none;
+    font-size: 14px;
+    line-height: 1.29;
+    color: #fff;
+    width: 220px;
+    padding: 12px 0 9px 0;
+    border-radius: 5px;
+    outline: none;
+    background-color: #ee3643;
+
+}
+
+.product-order-btn {
+    display: inline-block;
+    border: none;
+    padding: 0 0 0 0;
+    margin: 0 20px 0 0;
+}
+
+.product-cancel-btn {
+    text-decoration: none;
+    display: block;
+    width: 220px;
+    text-align: center;
+}
+
+.product-order-btn:hover ,
+.product-cancel-btn:hover {
+    background-color: #ca2c37;
+}
+
+.product-order-btn:active,
+.product-cancel-btn:active {
+    background-color: #ba2732;
+}
