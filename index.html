@@ -128,57 +128,37 @@
           -->
           </div>
         <div class="features-slider">
-          <div class="features-slider-content">
-            <h3 class="features-slider-title">Дрели</h3>
-            <p class="features-title-slide features-title-position">Соседям на радость!</p>
-            <img src="img/content-images/drill.jpg" alt="Картинка с дрелью" width="620" height="266">
-            <!--
-              тут должна быть Картинка с дрелью
-              src="img/content-images/drill.jpg"
-            -->
+          <div class="slider">
+            <input type="radio" id="btn-1" name="toggle" checked>
+            <input type="radio" id="btn-2" name="toggle">
+            <div class="btn-controls-next-prev">
+              <label for="btn-1" class="btn-next"></label>
+              <label for="btn-2" class="btn-prev"></label>
+            </div>
+            <div class="slider-inner">
+              <div class="slider-slides">
+                <div class="slide">
+                  <div class="slider-text">
+                    <h3 class="features-slider-title">Дрели</h3>
+                    <p class="features-title-slide features-title-position">Соседям на радость!</p>
+                  </div>
+                  <img src="img/content-images/drill.jpg" alt="Картинка с дрелью" width="620" height="266">
+                </div>
+                <div class="slide">
+                  <div class="slider-text">
+                    <h3 class="features-slider-title">Перфораторы</h3>
+                    <p class="features-title-slide features-title-position">Настоящие мужские игрушки</p>
+                  </div>
+                  <img src="img/content-images/perforator.jpg" alt="Картинка с перфоратором" width="620" height="266">
+                </div>
+              </div>
+            </div>
+            <div class="slider-controls-btn">
+              <label for="btn-1"></label>
+              <label for="btn-2"></label>
+            </div>
+            <a href="#" class="slider-button">Открыть каталог</a>
           </div>
-          <button type="button" class="slider-btn-next">
-            Следующий слайд
-            <!--
-              тут должен быть иконка Следующий слайд
-              src="img/icon-svg/slider-icon-next-previous.svg"
-            -->
-          </button>
-          <button type="button" class="slider-btn-previous">
-            Предыдущий слайд
-            <!--
-              тут должен быть иконка Предыдущий слайд
-              src="img/icon-svg/slider-icon-next-previous.svg"
-            -->
-            </button>
-          <a href="#" class="slider-button">Открыть каталог</a>
-        </div>
-        <div class="visually-hidden">
-          <!-- features-slider -->
-          <div class="features-slider-content">
-            <h3 class="features-slider-title">Перфораторы</h3>
-            <p class="features-title features-title-position">Настоящие мужские игрушки</p>
-            <img src="img/content-images/perforator.jpg" alt="Картинка с перфоратором" width="620" height="266">
-            <!--
-              тут должна быть Картинка с перфоратором
-              src="img/content-images/perforator.jpg"
-            -->
-          </div>
-          <button type="button" class="slider-btn-next">
-            Следующий слайд
-            <!--
-              тут должна быть иконка Следующий слайд
-              src="img/icon-svg/slider-icon-next-previous.svg"
-            -->
-          </button>
-          <button type="button" class="slider-btn-previous">
-            Предыдущий слайд
-            <!--
-              тут должна быть иконка Предыдущий слайд
-              src="img/icon-svg/slider-icon-next-previous.svg"
-            -->
-          </button>
-          <a href="#" class="slider-button">Открыть каталог</a>
         </div>
         <div class="features-united-container">
           <div class="features-discount features-blocks-size">
@@ -543,6 +523,7 @@
       </div>
     </div>
   </footer>
+  <div class="map-container"></div>
   <!--<p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>-->
 </body>
 
