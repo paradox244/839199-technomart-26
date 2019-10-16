@@ -800,6 +800,31 @@ header{
     border-bottom-color: #63a63e;
 }
 
+.popular-catalog-products-li .catalog-popup .catalog-popup-bookmark:hover,
+.catalog-production-perf .catalog-popup .catalog-popup-bookmark:hover {
+    border: solid 3px #32425c;
+}
+
+.popular-catalog-products-li .catalog-popup .catalog-popup-bookmark:active,
+.catalog-production-perf .catalog-popup .catalog-popup-bookmark:active {
+    border: solid 3px #32425c;
+    opacity: 0.3;
+}
+
+.popular-catalog-products-li .catalog-popup .catalog-popup-buy:hover,
+.catalog-production-perf .catalog-popup .catalog-popup-buy:hover {
+    background-color: #5fbb2d;
+    border: 3px solid #5fbb2d;
+    border-bottom-color: #367315;
+}
+
+.popular-catalog-products-li .catalog-popup .catalog-popup-buy:active,
+.catalog-production-perf .catalog-popup .catalog-popup-buy:active {
+    background-color: #518534;
+    border: 3px solid #518534;
+    border-bottom-color: #518534;
+}
+
 .popular-catalog-products-li .catalog-popup {
     display: none;
 }
@@ -820,6 +845,27 @@ header{
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
+    position: relative;
+}
+
+.catalog-popup-buy::before {
+    content: "";
+    display: inline-block;
+    position: relative;
+    background-image: url("../img/icon-svg/cart-icon.svg");
+    background-repeat: no-repeat;
+    background-size: 15px 15px;
+    width: 15px;
+    height: 15px;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    top: 2px;
+    left: -23px;
+    opacity: 0.3;
+}
+
+.catalog-popup-buy:hover::before {
+    opacity: 1;
 }
 
 .catalog-popup-bookmark {
@@ -2464,14 +2510,6 @@ footer p{
     color: #ffffff;
 }
 
-.catalog-popup-buy:hover {
-    background-color: #5fbb2d;
-}
-
-.catalog-popup-buy:active {
-    background-color: #518534;
-}
-
 .catalog-popup-bookmark {
     font-family: 'PT Sans', Arial, sans-serif;
     font-size: 14px;
@@ -2481,15 +2519,6 @@ footer p{
     border: solid 3px #63a63e;
     text-decoration: none;
     text-transform: uppercase;
-}
-
-.catalog-popup-bookmark:hover {
-    border: solid 3px #32425c;
-}
-
-.catalog-popup-bookmark:active {
-    opacity: 0.3;
-    border: solid 3px #32425c;
 }
 
 .catalog-paginator {
