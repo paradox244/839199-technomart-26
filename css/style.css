@@ -115,7 +115,7 @@ header{
 }
 
 .service-about {
-    margin-top: 21px;
+    margin-top: 15px;
 }
 
 /***************************header-top-panel***************************/
@@ -225,8 +225,18 @@ header{
     opacity: 1;
 }
 
+.header-bookmark {
+    left: 9px;
+}
+
+.header-cart-index {
+    left: 10px;
+    background-color: #293449;
+}
+
 .header-bookmark,
 .header-cart,
+.header-cart-index,
 .header-order {
     position: relative;
     font-size: 17px;
@@ -248,7 +258,7 @@ header{
     width: 14px;
     height: 16px;
     top: 12px;
-    left: 17px;
+    left: 9px;
     opacity: 0.3;
 }
 
@@ -262,6 +272,7 @@ header{
     opacity: 0.5;
 }
 
+.header-cart-index::before,
 .header-cart::before {
     content: '';
     position: absolute;
@@ -272,11 +283,11 @@ header{
     width: 15px;
     height: 15px;
     top: 12px;
-    left: 17px;
+    left: 8px;
     opacity: 0.3;
 }
 
-.header-cart:hover::before {
+.header-cart-index:hover::before {
     fill: #fff;
     opacity: 1;
 }
@@ -287,12 +298,12 @@ header{
 }
 
 .header-bookmark:hover,
-.header-cart:hover {
+.header-cart-index:hover {
     background-color: #212a3a;
 }
 
 .header-bookmark:active,
-.header-cart:active {
+.header-cart-index:active {
     background-color: #161d29;
 }
 
@@ -371,7 +382,7 @@ header{
     display: flex;
     position: relative;
     width: 284px;
-    margin: -27px 11px 0 0;
+    margin: -27px 12px 0 0;
 }
 
 .header-user-login {
@@ -379,14 +390,14 @@ header{
     line-height: 1;
     color: #000;
     text-decoration: none;
-    padding: 14px 28px 11px 48px;
-    margin: 0px 0px 0 14px;
+    padding: 14px 28px 11px 45px;
+    margin: 0px 0px 0 16px;
     background-color: #fff;
 }
 
 .header-user-registration {
     padding: 14px 27px 11px 24px;
-    margin: 0 0 0 6px;
+    margin: 0 0 0 10px;
     font-size: 21px;
     line-height: 1;
     color: #000;
@@ -426,6 +437,7 @@ header{
 }
 
 .header-ul-panel-links {
+    padding: 18px 31px;
     font-size: 17px;
     line-height: 1;
     color: #fff;
@@ -435,7 +447,7 @@ header{
 .header-ul-panel {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     list-style-type: none;
     margin-left: 0;
     padding-left: 0;
@@ -443,11 +455,11 @@ header{
 
 .header-ul-panel {
     background-color: #32425c;
-    border-bottom: 5px solid #293449;
+    border-bottom: 4px solid #293449;
 }
 
 .header-ul-panel-li {
-    padding: 19px 31px;
+    padding: 19px 0px;
 }
 
 .header-ul-panel-li:hover {
@@ -467,6 +479,34 @@ header{
     width: 100%;
     box-shadow: inset 0px -5px 0 0 var(#293449);
 }
+
+.home-link {
+    padding: 18px 31px 18px 28px;
+}
+
+.company-link {
+    padding: 18px 31px 18px 34px;
+}
+
+.catalog-link {
+    padding: 18px 31px 18px 27px;
+}
+
+.news-link {
+    padding: 18px 31px 18px 30px;
+}
+
+.special-offers-link {
+    padding: 18px 39px 18px 26px;
+}
+
+.delivery-link {
+    padding: 18px 31px 18px 25px;
+}
+
+.contact-link {
+    padding: 18px 31px 18px 31px;
+}
 /*************************** main -> section features***************************/
 
 .features-blocks-size {
@@ -476,7 +516,7 @@ header{
 
 .features {
     width: 940px;
-    margin-top: 62px;
+    margin-top: 61px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -524,7 +564,7 @@ header{
     background-color: #dc91d8;
     background-image: url("../img/icon-svg/technics.svg");
     background-repeat: no-repeat;
-    background-position: 197px center;
+    background-position: 191px center;
 }
 
 .features-discount {
@@ -542,11 +582,6 @@ header{
     margin-top: 21px;
 }
 
-.features-delivery a {
-    padding: 10px 35px 10px 35px;
-    margin-left: 25px;
-}
-
 .features-title-position {
     position: absolute;
     top: 50px;
@@ -558,8 +593,7 @@ header{
     font-weight: 700;
     line-height: 1.25;
     color: #fff;
-    margin-top: 17px;
-    margin-left: 22px;
+    margin: 19px 0 23px 22px;
 }
 
 .features-subtitle {
@@ -574,6 +608,31 @@ header{
     text-transform: uppercase;
 }
 
+.materials-subtitle {
+    padding: 11px 24px 11px 24px;
+    margin-left: 25px;
+}
+
+.tool-subtitle {
+    margin-left: 25px;
+    padding: 11px 27px 11px 27px;
+}
+
+.technics-subtitle {
+    margin-left: 23px;
+    padding: 11px 32px 11px 30px;
+}
+
+.discount-subtitle {
+    margin-left: 22px;
+    padding: 11px 23px 11px 23px;
+}
+
+.deliveryd-subtitle {
+    padding: 11px 37px 11px 37px;
+    margin-left: 23px;
+}
+
 .features-subtitle:hover {
     background-color: rgba(0, 0, 0, .2);
 }
@@ -585,25 +644,15 @@ header{
 .features-slider {
     width: 620px;
     position: relative;
-    margin-top: 19px;
+    margin-top: 20px;
 }
 
 .features-title-slide {
     width: 215px;
-    margin-top: 10px;
+    margin-top: 11px;
     line-height: 1.33;
     font-size: 18px;
     color: #fff;
-}
-
-.features-slider-title {
-    position: absolute;
-    margin: 20px 0 0 23px;
-    text-transform: uppercase;
-    color: #fff;
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 1;
 }
 
 .slider-button {
@@ -613,11 +662,11 @@ header{
     text-decoration: none;
     color: #fff;
     left: 25px;
-    bottom: 21px;
+    bottom: 22px;
     border-radius: 3px;
     font-size: 14px;
     line-height: 1.29;
-    padding: 10px 45px 10px 49px;
+    padding: 10px 46px 10px 50px;
 }
 
 .slider-button:hover {
@@ -637,7 +686,7 @@ header{
 
 /***************************main -> section popular-products***************************/
 .popular-products {
-    margin-top: 53px;
+    margin-top: 51px;
 }
 
 .all-header-popular {
@@ -649,14 +698,15 @@ header{
 }
 
 .popular-title {
-    margin: 25px 0px 27px 28px;
+    margin: 31px 0px 31px 28px;
     font-size: 30px;
     line-height: 1;
     text-transform: uppercase;
     color: #32425c;
 }
 
-.popular-subtitle {
+.popular-subtitle,
+.popular-subtitle-products {
     background-color: #ee3643;
     color: #fff;
     font-size: 14px;
@@ -664,17 +714,24 @@ header{
     text-transform: uppercase;
     text-decoration: none;
     text-align: center;
-    padding: 9px 0px 10px 0px;
-    margin: 1px 23px 0 0px;
+    padding: 9px 0px 10px 1px;
+    margin: 0px 23px 0 0px;
     width: 253px;
     border-radius: 3px;
 }
 
-.popular-subtitle:hover {
+.popular-subtitle-products {
+    padding: 10px 0px 10px 1px;
+    margin: 2px 23px 0 0px;
+}
+
+.popular-subtitle:hover,
+.popular-subtitle-products:hover {
     background-color: #ca2c37;
 }
 
-.popular-subtitle:active {
+.popular-subtitle:active,
+.popular-subtitle-products:active {
     background-color: #ba2732;
 }
 
@@ -684,7 +741,7 @@ header{
     list-style-type: none;
     width: 100%;
     margin-left: 0;
-    margin-top: 23px;
+    margin-top: 18px;
     margin-bottom: 0;
     padding-left: 0;
 }
@@ -735,28 +792,24 @@ header{
     color: #a9a9a9;
 }
 
-.catalog-product-outdate {
-    margin-bottom: 9px;
-}
-
-.catalog-product-price {
+/* .catalog-product-price {
     position: relative;
     font-family: 'PT Sans', Arial, sans-serif;
     background-color: #ef3341;
-    padding: 11px 35px;
-    margin-bottom: 21px;
+    padding: 11px 36px 11px 34px;
+    margin-bottom: 16px;
     font-size: 17px;
     font-weight: bold;
     line-height: 1.06;
     text-align: center;
     color: #ffffff;
-}
+} */
 
 .popular-catalog-products-li .catalog-product-price::after {
     content: "";
     position: absolute;
     top: 0px;
-    right: -26px;
+    right: -28px;
     width: 0;
     height: 0;
     border: 20px solid #fff;
@@ -833,10 +886,6 @@ header{
     display: block;
 }
 
-.last-product {
-    margin-top: 28px;
-}
-
 .catalog-popup-buy {
     background-color: #63a63e;
     color: #fff;
@@ -910,6 +959,36 @@ header{
     justify-content: space-between;
 }
 
+.logo-makita,
+.logo-bosch {
+    margin: -4px 0 0 0;
+}
+
+.logo-makita,
+.logo-dewalt {
+    margin: -7px 0 0 0;
+}
+
+.logo-interskol {
+    margin: -18px 0 0 0;
+}
+
+.logo-hitachi {
+    margin: -5px 0 0 1px;
+}
+
+.logo-lg {
+    margin: -8px 0 0 0;
+}
+
+.logo-aeg {
+    margin: -9px 0 0 0;
+}
+
+.logo-metabo {
+    margin: -14px -6px 0 0px;
+}
+
 .services-title {
     text-transform: uppercase;
     font-weight: 500;
@@ -923,6 +1002,7 @@ header{
     font-family: 'PT Sans', Arial, sans-serif;
     font-size: 13px;
     line-height: 1.85;
+    letter-spacing: 0.07px;
     color: #000;
     margin: 0;
 }
@@ -949,7 +1029,7 @@ header{
 .btn-slider-controls  {
     text-align: left;
     width: 210px;
-    padding-left: 20px;
+    padding: 0 10px 0px 20px;
     min-height: 61px;
     font-size: 21px;
     font-weight: bold;
@@ -980,6 +1060,8 @@ header{
     text-transform: uppercase;
     margin-bottom: 24px;
     font-size: 36px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
     line-height: 1;
     color: #32425c;
 }
@@ -988,7 +1070,9 @@ header{
     font-family: 'PT Sans', Arial, sans-serif;
     font-size: 13px;
     line-height: 1.85;
-    width: 275px;
+    letter-spacing: 0.1px;
+    margin-left: 2px;
+    width: 285px;
     color: #000000;
 }
 
@@ -1007,7 +1091,7 @@ header{
     display: flex;
     justify-content: space-between;
     width: 100%;
-    top: 112px;
+    top: 114px;
 }
 
 .btn-next::before {
@@ -1074,10 +1158,12 @@ header{
 
 .features-slider-title {
     text-transform: uppercase;
-    color: #fff;
+    position: absolute;
     font-size: 36px;
     font-weight: 700;
     line-height: 1;
+    margin: 22px 0 0 24px;
+    color: #fff;
 }
 
 .slider-controls-btn {
@@ -1128,7 +1214,7 @@ header{
     width: 468px;
     height: 261px;
     bottom: 0;
-    right: 200px;
+    right: 202px;
 }
 
 /***************************main -> section company***************************/
@@ -1148,7 +1234,7 @@ header{
 .company-caption {
     text-transform: uppercase;
     font-weight: 400;
-    margin-bottom: 28px;
+    margin: 37px 0 26px 0;
     font-size: 30px;
     line-height: 1;
     color: #000;
@@ -1171,6 +1257,8 @@ header{
     display: block;
     width: 300px;
     margin: 34px 0 0 0;
+    padding: 11px 0 9px 0;
+    letter-spacing: 0.3px;
 }
 
 .company-contacts-maps {
@@ -1195,14 +1283,16 @@ header{
 
 .company-contacts-info {
     width: 179px;
-    margin: 28px 0 31px 0;
+    margin: 26px 0 31px 0;
 }
 
 .company-info {
+    letter-spacing: 0.14px;
     margin:0 0 23px 0;
 }
 
 .company-info-delivery {
+    letter-spacing: 0.06px;
     margin: 0 0 21px 0;
 }
 
@@ -1214,7 +1304,7 @@ header{
 
 .company-delivery {
     list-style-type: none;
-    margin: 0 0 38px 0px;
+    margin: 0 0 37px 0px;
     padding-left: 36px;
     position: relative;
 }
@@ -1262,7 +1352,7 @@ header{
 }
 
 .company-description {
-    margin: 41px 0 87px 0;
+    margin: 41px 0 86px 0;
     width: 540px;
 }
 
@@ -1273,8 +1363,9 @@ header{
 
 .company-contacts-title {
     text-transform: uppercase;
-    margin: 21px 0 0 0;
+    margin: 28px 0 0 0;
     font-weight: 400;
+    letter-spacing: 0.1px;
     font-size: 30px;
     line-height: 1;
     color: #000
@@ -1295,7 +1386,7 @@ footer p{
     width: 220px;
     padding: 20px 0 20px 0;
     background-color: #ee3643;
-    box-shadow: #ca2c37 0 5px 0 0;
+    box-shadow: #ca2c37 0 7px 0 0;
 }
 
 .footer-logo:hover {
@@ -1368,14 +1459,16 @@ footer p{
 
 .footer-middle-center-container {
     background-color: #32425c;
-}
-
-.footer-middle-center-container {
-    padding: 34px 0 47px 0;
+    padding: 35px 0 47px 0;
 }
 
 .footer-contacts-panel {
-    width: 322px;
+    width: 340px;
+}
+
+.footer-contacts-address {
+    margin-left: 4px;
+    width: 340px;
 }
 
 .footer-contacts-address,
@@ -1387,6 +1480,8 @@ footer p{
 
 .footer-contact-telephone{
     text-decoration: none;
+    letter-spacing: 0.16px;
+    margin-left: 2px;
 }
 
 .footer-offer-panel-links {
@@ -1428,7 +1523,7 @@ footer p{
     flex-direction: row;
     list-style-type: none;
     padding-left: 0;
-    margin: 0;
+    margin: 0 0 0 15px;
 }
 
 /***************************footer -> footer-bottom-panel***************************/
@@ -1453,7 +1548,7 @@ footer p{
 }
 
 .footer-bottom-panel-inner {
-    margin: 0 0 0 3px;
+    margin: 0 0 0 2px;
 }
 
 .footer-bottom-social  {
@@ -1461,7 +1556,7 @@ footer p{
     justify-content: space-between;
     list-style-type: none;
     width: 132px;
-    margin: -2px 0 0 106px;
+    margin: -2px 0 0 108px;
     padding: 0;
 }
 
@@ -2053,8 +2148,9 @@ footer p{
     background-color: #f2f6f8;
     font-size: 30px;;
     line-height: 1;
-    margin: 20px 0 19px 0;
-    padding: 29px 0 28px 29px;
+    letter-spacing: -0.9px;
+    margin: 21px 0 17px 0;
+    padding: 30px 0 28px 27px;
     color: #32425c;
 }
 
@@ -2066,7 +2162,7 @@ footer p{
 .price-filter-form {
     border: none;
     padding: 0 0 0 0;
-    margin: 12px 0 0 0;
+    margin: 10px 0 0 0;
 }
 
 .filter-item {
@@ -2079,7 +2175,7 @@ footer p{
 
 .range-filter {
     width: 220px;
-    margin-top: 16px;
+    margin-top: 14px;
 }
 
 .filter-item legend {
@@ -2137,6 +2233,7 @@ footer p{
     display: flex;
     justify-content: space-between;
     font-size: 0;
+    margin: -1px 0 0 0;
 }
 
 .price-controls label {
@@ -2147,7 +2244,7 @@ footer p{
 
 .price-controls input {
     width: 60px;
-    padding: 8px 17px;
+    padding: 10px 17px;
     font-family: 'Roboto', Arial, sans-serif;
     font-size: 16px;
     text-align: center;
@@ -2177,7 +2274,7 @@ footer p{
     display: flex;
     flex-direction: column;
     border: none;
-    margin: 43px 0 0 0;
+    margin: 42px 0 0 0;
     padding: 0;
 }
 
@@ -2197,7 +2294,7 @@ footer p{
     display: flex;
     flex-direction: column;
     border: none;
-    margin: 37px 0 0 0;
+    margin: 35px 0 0 0;
     padding: 0;
 }
 
@@ -2209,6 +2306,7 @@ footer p{
     padding: 12px 0 9px 18px;
     color: #000000;
     background-color: #f7f3ec;
+    margin: 4px 0 0 1px;
 }
 
 .price-filter-control {
@@ -2224,6 +2322,14 @@ footer p{
     color: #000000;
     background-color: #f7f3ec;
     width: 95px;
+}
+
+.manufacturer-title {
+    letter-spacing: 0px;
+}
+
+.supply-title {
+    letter-spacing: 0.6px;
 }
 
 .panel-form-title {
@@ -2285,7 +2391,7 @@ footer p{
 }
 
 .network {
-    margin: 0 0 71px 0px;
+    margin: 0 0 70px 0px;
 }
 
 .label-brand,
@@ -2318,10 +2424,10 @@ footer p{
     position: relative;
     background-color: #f7f3ec;
     width: 700px;
+    margin: 4px 0 0 0;
 }
 
 .catalog-filter-sorting {
-    padding-top: 4px;
     padding-left: 19px;
     font-family: 'PT Sans', Arial, sans-serif;
     font-size: 13px;
@@ -2362,7 +2468,7 @@ footer p{
     width: 100%;
     list-style-type: none;
     margin: 0;
-    padding: 10px 0 9px 0;
+    padding: 9px 0 9px 0;
 }
 
 .catalog-options-btn-first {
@@ -2386,7 +2492,7 @@ footer p{
     flex-direction: column;
     align-items: center;
     width: 220px;
-    margin-top: 23px;
+    margin-top: 21px;
     border: solid 1px #eaeaea;
     background-color: #ffffff;
 }
@@ -2492,7 +2598,7 @@ footer p{
 }
 
 .catalog-product-outdate {
-    margin-bottom: 8px;
+    margin-bottom: 7px;
 }
 
 .catalog-product-price,
@@ -2525,7 +2631,7 @@ footer p{
     display: flex;
     align-items: center;
     min-width: 285px;
-    margin: 50px 0 0 0;
+    margin: 54px 0 0 0;
 }
 
 .catalog-paginator-btn {
@@ -2554,6 +2660,15 @@ footer p{
     margin-left: 1px;
     padding: 10px 30px;
 }
+
+.last-btn:hover {
+    border: solid 1px #bdc6ca;
+}
+
+.last-btn:active {
+    border: solid 1px #ee3643;
+}
+
 
 .catalog-paginator-btn:first-child {
     color: #fff;
@@ -2584,7 +2699,7 @@ footer p{
     transform: rotate(180deg);
     width: 11px;
     height: 10px;
-    top: 17px;
+    top: 14px;
     right: 49px;
 }
 
@@ -2612,7 +2727,7 @@ footer p{
     background-size: 11px 10px;
     width: 11px;
     height: 10px;
-    top: 17px;
+    top: 14px;
     right: 17px;
 }
 
@@ -2637,13 +2752,13 @@ footer p{
 }
 
 .perforators-about {
-    margin-top: 57px;
+    margin-top: 58px;
     background-color: #f4f7f9;
 }
 
 .perforators-title {
     text-transform: uppercase;
-    font-size: 30px;
+    font-size: 29px;
     line-height: 30px;
     padding-top: 67px;
     color: #000;
@@ -2654,7 +2769,7 @@ footer p{
     text-transform: none;
     font-size: 13px;
     line-height: 24px;
-    padding-bottom: 73px;
+    padding-bottom: 70px;
     margin: 0;
     color: #000;
 }
