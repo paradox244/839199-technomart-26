@@ -526,7 +526,7 @@ header{
 .features-united-container {
     display: flex;
     flex-direction: column;
-    margin: 19px 0 0 20px;
+    margin: 20px 0 0 20px;
 }
 
 .inner-center-container {
@@ -540,17 +540,6 @@ header{
     background-image: url("../img/icon-svg/material.svg");
     background-repeat: no-repeat;
     background-position: 213px center;
-}
-
-.features-materials:after {
-    position: absolute;
-    content: '';
-    top: 0;
-    right: 0;
-    width: 60px;
-    height: 60px;
-    background: url("../img/new-flag.png");
-    background-repeat: no-repeat;
 }
 
 .features-tool {
@@ -579,7 +568,7 @@ header{
     background-image: url("../img/icon-svg/delivery.svg");
     background-repeat: no-repeat;
     background-position: 191px center;
-    margin-top: 21px;
+    margin-top: 20px;
 }
 
 .features-title-position {
@@ -620,7 +609,7 @@ header{
 
 .technics-subtitle {
     margin-left: 23px;
-    padding: 11px 32px 11px 30px;
+    padding: 11px 31px 11px 30px;
 }
 
 .discount-subtitle {
@@ -754,22 +743,6 @@ header{
     width: 220px;
     border: solid 1px #eaeaea;
     background-color: #ffffff;
-}
-
-.popular-catalog-products-li .flag {
-    position: absolute;
-    top: -1px;
-    right: -1px;
-    width: 60px;
-    height: 60px;
-    text-indent: -1000px;
-    overflow: hidden;
-    z-index: 20;
-}
-
-.popular-catalog-products-li  .flag {
-    background: url("../img/new-flag.png") 0 0;
-    background-repeat: no-repeat;
 }
 
 .catalog-product-firm {
@@ -1070,7 +1043,7 @@ header{
     font-family: 'PT Sans', Arial, sans-serif;
     font-size: 13px;
     line-height: 1.85;
-    letter-spacing: 0.1px;
+    letter-spacing: 0.05px;
     margin-left: 2px;
     width: 285px;
     color: #000000;
@@ -1249,14 +1222,14 @@ header{
     line-height: 1.29;
     color: #fff;
     background-color: #ee3643;
-    padding: 11px 0 8px 0;
+    padding: 11px 0 9px 0;
     border-radius: 2px;
 }
 
 .company-message {
     display: block;
     width: 300px;
-    margin: 34px 0 0 0;
+    margin: 35px 0 0 0;
     padding: 11px 0 9px 0;
     letter-spacing: 0.3px;
 }
@@ -2306,7 +2279,7 @@ footer p{
     padding: 12px 0 9px 18px;
     color: #000000;
     background-color: #f7f3ec;
-    margin: 4px 0 0 1px;
+    margin: 2px 0 12px 1px;
 }
 
 .price-filter-control {
@@ -2492,25 +2465,10 @@ footer p{
     flex-direction: column;
     align-items: center;
     width: 220px;
-    margin-top: 21px;
+    min-height: 316px;
+    margin-top: 20px;
     border: solid 1px #eaeaea;
     background-color: #ffffff;
-}
-
-.catalog-production-perf .flag {
-    position: absolute;
-    top: -1px;
-    right: -1px;
-    width: 60px;
-    height: 60px;
-    text-indent: -1000px;
-    overflow: hidden;
-    z-index: 20;
-}
-
-.catalog-production-perf .flag {
-    background: url("../img/new-flag.png") 0 0;
-    background-repeat: no-repeat;
 }
 
 .catalog-production-perf .catalog-product-price::after,
@@ -2518,11 +2476,16 @@ footer p{
     content: "";
     position: absolute;
     top: 0px;
-    right: -26px;
+    right: -28px;
     width: 0;
     height: 0;
     border: 20px solid #fff;
     border-left-color: #ee3643;
+}
+
+.catalog-last-product-price {
+    margin-top: 26px;
+    margin-bottom: 0;
 }
 
 .catalog-popup {
@@ -2631,7 +2594,7 @@ footer p{
     display: flex;
     align-items: center;
     min-width: 285px;
-    margin: 54px 0 0 0;
+    margin: 51px 0 0 0;
 }
 
 .catalog-paginator-btn {
@@ -2769,7 +2732,26 @@ footer p{
     text-transform: none;
     font-size: 13px;
     line-height: 24px;
+    letter-spacing: 0.13px;
     padding-bottom: 70px;
     margin: 0;
     color: #000;
+}
+
+.flag-new {
+    position: relative;
+}
+
+.flag-new::before {
+    content: "";
+    position: absolute;
+    display: block;
+    z-index: 20;
+    background-image: url("../img/new-flag.png");
+    background-repeat: no-repeat;
+    background-size: 60px 60px;
+    width: 60px;
+    height: 60px;
+    top: 0;
+    right: 0;
 }
