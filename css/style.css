@@ -394,7 +394,7 @@ header{
 .header-middle-contact {
     position: relative;
     text-align: center;
-    max-width: 270px;
+    max-width: 275px;
     margin:16px -28px 0 0;
 }
 
@@ -424,7 +424,7 @@ header{
 .header-contact-address {
     font-size: 14px;
     line-height: 1.71;
-    margin: 15px 2px 0 0;
+    margin: 17px 2px 0 0;
     text-align: center;
     color: #32425c;
 }
@@ -654,7 +654,7 @@ header{
     font-weight: 700;
     line-height: 1.25;
     color: #fff;
-    margin: 19px 0 23px 22px;
+    margin: 20px 0 22px 22px;
 }
 
 .features-subtitle {
@@ -785,15 +785,15 @@ header{
     text-transform: uppercase;
     text-decoration: none;
     text-align: center;
-    padding: 9px 0px 10px 1px;
-    margin: 0px 23px 0 0px;
+    padding: 10px 0px 10px 0px;
+    margin: 0px 24px 0 0px;
     width: 253px;
     border-radius: 3px;
 }
 
 .popular-subtitle-products {
     padding: 10px 0px 10px 1px;
-    margin: 2px 23px 0 0px;
+    margin: -2px 23px 0 0px;
 }
 
 .popular-subtitle:hover,
@@ -838,17 +838,6 @@ header{
     background-color: #ffffff;
 }
 
-.catalog-product-firm {
-    font-family: 'PT Sans', Arial, sans-serif;
-    font-weight: bold;
-    text-align: center;
-    font-size: 18px;
-    line-height: 1.11;
-    width: 179px;
-    margin: 10px 0 13px 0;
-    color: #000000;
-}
-
 .catalog-product-outdate-del {
     font-family: 'PT Sans', Arial, sans-serif;
     font-size: 17px;
@@ -857,19 +846,6 @@ header{
     text-align: center;
     color: #a9a9a9;
 }
-
-/* .catalog-product-price {
-    position: relative;
-    font-family: 'PT Sans', Arial, sans-serif;
-    background-color: #ef3341;
-    padding: 11px 36px 11px 34px;
-    margin-bottom: 16px;
-    font-size: 17px;
-    font-weight: bold;
-    line-height: 1.06;
-    text-align: center;
-    color: #ffffff;
-} */
 
 .popular-catalog-products-li .catalog-product-price:after {
     content: "";
@@ -985,6 +961,7 @@ header{
 }
 
 .catalog-popup-bookmark {
+    font-family: 'Cuprum', Arial, sans-serif ;
     font-size: 14px;
     line-height: 1.29;
     text-align: center;
@@ -997,7 +974,7 @@ header{
 /***************************main -> section popular-brands***************************/
 
 .popular-brands {
-    margin-top: 21px;
+    margin-top: 20px;
     background-color: #fff;
 }
 
@@ -1027,6 +1004,7 @@ header{
 }
 
 .brand-list {
+    margin: -2px 0 0 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1086,7 +1064,7 @@ header{
 }
 
 .button-slider-controls {
-    margin: 66px 0 0 0;
+    margin: 69px 0 0 0;
     list-style-type: none;
     padding-left: 0;
     position: relative;
@@ -1116,7 +1094,6 @@ header{
     border: none;
     background-color: #32425c;
     border-bottom: 1px solid #293449;
-    border-top: 1px solid #405069;
 }
 
 .btn-slider-controls:hover {
@@ -1128,13 +1105,33 @@ header{
     color:#32425c;
 }
 
-.advantage-details {
-    margin: 31px 0 0 80px;
+.service-slider-tab {
+    min-width: 715px;
+    min-height: 300px;
+    margin: 31px 0 0 0;
 }
 
-.advantage-details-title {
-    text-transform: uppercase;
+.advantage-details-delivery {
+    display: none;
+    background-image: url("../img/content-images/delivery-image.png");
+    background-repeat: no-repeat;
+    background-position: 150px 25px;
+    margin: 0 0 0 80px;
+}
+
+.advantage-details-delivery-title {
     margin-bottom: 24px;
+}
+
+
+.advantage-details-delivery-info {
+    padding: 0 0 20px 0;
+}
+
+.advantage-details-delivery-title,
+.advantage-details-credit-title,
+.advantage-details-warranty-title {
+    text-transform: uppercase;
     font-size: 36px;
     font-weight: 400;
     letter-spacing: 0.5px;
@@ -1142,14 +1139,74 @@ header{
     color: #32425c;
 }
 
-.advantage-details-info {
+.advantage-details-delivery-info,
+.advantage-details-credit-info,
+.advantage-details-warranty-info {
     font-family: 'PT Sans', Arial, sans-serif;
     font-size: 13px;
     line-height: 1.85;
     letter-spacing: 0.05px;
-    margin-left: 2px;
+    /* margin-left: 2px; */
     width: 285px;
     color: #000000;
+}
+
+.advantage-details-warranty {
+    display: none;
+    margin: 38px 0 0 80px;
+    background-image: url("../img/content-images/warranty-image.png");
+    background-repeat: no-repeat;
+    background-position: 238px 3px;
+}
+
+.advantage-details-warranty-title {
+    margin: 0 0 0 0;
+    letter-spacing: 0.5px;
+}
+
+.advantage-details-warranty-info {
+    width: 380px;
+    margin: 24px 0 0 0;
+    padding: 0 0 70px 0;
+}
+
+.advantage-details-credit {
+    background-image: url("../img/content-images/credit-image.png");
+    background-repeat: no-repeat;
+    background-position: 165px 3px;
+    margin: 36px 0 0 78px;
+}
+
+.advantage-details-credit-title {
+    margin: 0 0 0 0;
+}
+
+.advantage-details-credit-info {
+    margin: 25px 0 0 0;
+}
+
+.credit-details-btn {
+    display: inline-block;
+    background-color: #ff5357;
+    font-family: 'Cuprum', Arial, sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 14px;
+    line-height: 1.29;
+    text-align: center;
+    padding: 10px 45px;
+    margin: 27px 0 20px 0;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.credit-details-btn:hover {
+    background-color: #ca2c37;
+}
+
+.credit-details-btn:active {
+    background-color: #ba2732;
 }
 
 /***************************main -> section service***************************/
@@ -1290,19 +1347,7 @@ header{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-bottom: 99px;
-}
-
-.service:before {
-    content: "";
-    position: absolute;
-    background-image: url("../img/content-images/delivery-image.png");
-    background-repeat: no-repeat;
-    background-size: 468px 261px;
-    width: 468px;
-    height: 261px;
-    bottom: 0;
-    right: 202px;
+    margin-bottom: 23px;
 }
 
 /***************************main -> section company***************************/
@@ -1348,9 +1393,10 @@ header{
 .company-message {
     display: block;
     width: 300px;
-    margin: 35px 0 0 0;
+    margin: 34px 0 0 0;
     padding: 11px 0 9px 0;
     letter-spacing: 0.3px;
+    border-radius: 3px;
 }
 
 .company-about:hover,
@@ -1370,6 +1416,7 @@ header{
 .company-about {
     display: block;
     width: 220px;
+    border-radius: 3px;
 }
 
 .company-info,
@@ -1400,12 +1447,13 @@ header{
 
 .company-info-delivery {
     letter-spacing: 0.06px;
-    margin: 0 0 21px 0;
+    margin: 0 0 22px 0;
 }
 
 .company-delivery-firm {
     font-size: 18px;
     line-height: 1.11;
+    letter-spacing: 0.1px;
     color: #000;
 }
 
@@ -1421,7 +1469,7 @@ header{
 }
 
 .company-delivery-li-third {
-    margin: 20px 0 0 0;
+    margin: 21px 0 0 0;
 }
 
 .company-delivery-li-first:before {
@@ -1459,7 +1507,7 @@ header{
 }
 
 .company-description {
-    margin: 41px 0 86px 0;
+    margin: 42px 0 86px 0;
     width: 540px;
 }
 
@@ -1470,7 +1518,7 @@ header{
 
 .company-contacts-title {
     text-transform: uppercase;
-    margin: 28px 0 0 0;
+    margin: 29px 0 0 0;
     font-weight: 400;
     letter-spacing: 0.1px;
     font-size: 30px;
@@ -1562,7 +1610,7 @@ footer p{
         -ms-flex-direction: row;
             flex-direction: row;
     list-style-type: none;
-    margin: 37px -3px 0 0;
+    margin: 38px -3px 0 0;
     padding-left: 0;
 }
 
@@ -1622,11 +1670,11 @@ footer p{
 }
 
 .footer-bottom-feedback {
-    margin: 0px 0px 0 65px;
+    margin: 2px 0px 0 65px;
 }
 
 .footer-bottom-design {
-    margin: 0 12px 0 0;
+    margin: 2px 12px 0 0;
 }
 
 .footer-bottom-feedback a:active,
@@ -1682,7 +1730,7 @@ footer p{
 }
 
 .footer-bottom-panel-inner {
-    margin: 0 0 0 2px;
+    margin: 2px 0 0 2px;
 }
 
 .footer-bottom-social  {
@@ -1694,7 +1742,7 @@ footer p{
             justify-content: space-between;
     list-style-type: none;
     width: 132px;
-    margin: -2px 0 0 108px;
+    margin: -1px 0 0 108px;
     padding: 0;
 }
 
@@ -2133,7 +2181,7 @@ footer p{
 .header-middle-contact-catalog {
     position: relative;
     text-align: center;
-    max-width: 270px;
+    max-width: 275px;
     margin:16px -33px 0 0;
 }
 
@@ -2473,7 +2521,7 @@ footer p{
         -ms-flex-direction: column;
             flex-direction: column;
     border: none;
-    margin: 42px 0 0 0;
+    margin: 43px 0 0 0;
     padding: 0;
 }
 
@@ -2485,8 +2533,12 @@ footer p{
     margin: 0 0 9px 0;
 }
 
+.brand-container-third {
+    margin: 11px 0 0 0;
+}
+
 .brand-container-fourth {
-    margin: 10px 0 10px 0;
+    margin: 11px 0 10px 0;
 }
 
 .type-supply-form {
@@ -2498,7 +2550,7 @@ footer p{
         -ms-flex-direction: column;
             flex-direction: column;
     border: none;
-    margin: 35px 0 0 0;
+    margin: 38px 0 0 0;
     padding: 0;
 }
 
@@ -2510,7 +2562,7 @@ footer p{
     padding: 12px 0 9px 18px;
     color: #000000;
     background-color: #f7f3ec;
-    margin: 2px 0 12px 1px;
+    margin: 3px 0 14px 1px;
 }
 
 .price-filter-control {
@@ -2796,13 +2848,13 @@ footer p{
 }
 
 .last-product {
-    margin-top: 27px;
+    margin-top: 28px;
 }
 
 .catalog-product-firm {
     text-transform: none;
     width: 160px;
-    margin-top: 9px;
+    margin-top: 10px;
     margin-bottom: 12px;
     min-height: 33px;
     font-family: 'PT Sans', Arial, sans-serif;
@@ -2813,17 +2865,8 @@ footer p{
     color: #000;
 }
 
-.catalog-product-outdate-del {
-    font-family: 'PT Sans', Arial, sans-serif;
-    font-size: 17px;
-    font-weight: bold;
-    line-height: 1.06;
-    text-align: center;
-    color: #999;
-}
-
 .catalog-product-outdate {
-    margin-bottom: 7px;
+    margin-bottom: 9px;
 }
 
 .catalog-product-price,
@@ -2832,7 +2875,7 @@ footer p{
     font-family: 'PT Sans', Arial, sans-serif;
     background-color: #ef3341;
     padding: 11px 34px;
-    margin-bottom: 16px;
+    margin-bottom: 19px;
     border-radius: 3px;
     font-size: 17px;
     font-weight: bold;
@@ -2842,7 +2885,7 @@ footer p{
 }
 
 .catalog-popup-bookmark {
-    font-family: 'PT Sans', Arial, sans-serif;
+    font-family: 'Cuprum', Arial, sans-serif;
     font-size: 14px;
     line-height: 1.29;
     text-align: center;
@@ -2998,7 +3041,8 @@ footer p{
     text-transform: uppercase;
     font-size: 29px;
     line-height: 30px;
-    padding-top: 67px;
+    padding-top: 66px;
+    margin: 0 0 27px 0;
     color: #000;
 }
 
@@ -3008,7 +3052,7 @@ footer p{
     font-size: 13px;
     line-height: 24px;
     letter-spacing: 0.13px;
-    padding-bottom: 70px;
+    padding-bottom: 68px;
     margin: 0;
     color: #000;
 }
@@ -3028,5 +3072,5 @@ footer p{
     width: 60px;
     height: 60px;
     top: 0;
-    right: 0;
+    right: -2px;
 }
