@@ -14,34 +14,18 @@
       <div class="header-top-panel">
       <div class="header-container">
         <a href="index.html" class="header-logo">
-          <span class="visually-hidden">Логотип Техномарт</span>
-          <!--
-            тут должен быть Логотип Техномарт
-            src="img/texnomart.png"
-          -->
+          <img src="img/texnomart.png" class="logo-texnomart" alt="Логотип Техномарт" width="109" height="19">
         </a>
         <div class="header-search">
-          <!--
-              тут должна быть иконка Поиска
-              src="img/icon-svg/icon-search.svg"
-            -->
           <form action="https://echo.htmlacademy.ru" class="form-search" method="post">
             <input type="search" name="search" id="search" class="inp-form-search" placeholder="Поиск:" required>
             <label for="search" class="label-search"><span class="visually-hidden">Поле поиска</span></label>
           </form>
         </div>
         <a href="#" class="header-bookmark">
-          <!--
-            тут должна быть иконка Закладки
-            src="img/icon-svg/icon-bookmark.svg"
-          -->
           Закладки: 0
         </a>
         <a href="#" class="header-cart">Корзина:
-          <!--
-            тут должна быть иконка Корзина
-            src="img/icon-svg/icon-cart.svg"
-          -->
           <span class="header-number-cart">10</span>
         </a>
         <a href="#" class="header-order">Оформить заказ</a>
@@ -55,27 +39,15 @@
         </h1>
         <div class="header-middle-contact-catalog">
           <a href="tel:+78125550555" class="header-contact-telephone">
-            <!--
-              тут должна быть иконка Номер телефона
-              src="img/icon-svg/icon-phone.svg"
-            -->
             +7 (812) 555-05-55
           </a>
           <p class="header-contact-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         </div>
         <div class="header-middle-user-online">
           <a href="#" class="header-user-login-online">
-            <!--
-              тут должна быть иконка User
-              src="img/icon-svg/icon-user.svg"
-            -->
             Равшан Джамшутович
           </a>
           <a href="#" class="header-user-login-logout">
-            <!--
-              тут должна быть иконка User logout
-              src="img/icon-svg/icon-logout.svg"
-            -->
           </a>
           <div class="header-user-items">
             <a href="#" class="header-user-orders">Мои заказы</a>
@@ -116,10 +88,6 @@
           <li class="links-content-li li-first">
             <a href="index.html" class="link-index link-content">
               <span class="visually-hidden">Переход на главную с иконкой</span>
-              <!--
-                Тут должна быть иконка На главную
-                src="img/icon-svg/icon-home.svg"
-              -->
             </a>
           </li>
           <li class="links-content-li li-second">
@@ -158,12 +126,12 @@
               <legend class="panel-form-title manufacturer-title">Производители:</legend>
               <div class="brand-container brand-container-first">
                 <input id="bosh-checkbox" class="filter-brands-checkbox visually-hidden" type="checkbox" name="bosch"
-                  value="bosch" >
+                  value="bosch" disabled>
                 <label for="bosh-checkbox" class="label-brand brand-check">Bosch</label>
               </div>
               <div class="brand-container brand-container-second">
                 <input id="interskol-checkbox" class="filter-brands-checkbox visually-hidden" type="checkbox"
-                  name="interskol" value="interskol" checked>
+                  name="interskol" value="interskol" checked >
                 <label for="interskol-checkbox" class="label-brand brand-check">Интерскол</label>
               </div>
               <div class="brand-container brand-container-third">
@@ -184,22 +152,28 @@
             </fieldset>
             <fieldset class="type-supply-form">
               <legend class="panel-form-title supply-title">Питание:</legend>
-              <div class="charge radio_btn">
-                <input id="charge-device" class="radio-charge" type="radio" name="type-supply" value="charge" checked>
-                <label for="charge-device" class="type-device">Аккумуляторные</label>
-              </div>
-              <div class="network radio_btn">
-                <input id="network-device" class="radio-network" type="radio" name="type-supply" value="network">
-                <label for="network-device" class="type-device">Сетевые</label>
-              </div>
+              <ul class="power-supply-list">
+                <li class="charge radio_btn">
+                  <input id="charge-device" class="radio-charge visually-hidden" type="radio" name="type-supply"
+                    value="charge" checked>
+                  <label for="charge-device" class="type-device">Аккумуляторные</label>
+                </li>
+                <li class="network radio_btn">
+                  <input id="network-device" class="radio-network visually-hidden" type="radio" name="type-supply"
+                    value="network">
+                  <label for="network-device" class="type-device">Сетевые</label>
+                </li>
+              </ul>
               <button type="submit" class="panel-form-btn">Показать</button>
             </fieldset>
           </form>
       </div>
       <div class="catalog-goods-column">
           <div class="catalog-filter-options">
-            <span class="catalog-filter-sorting">Сортировка:</span>
             <ul class="catalog-options-parameter">
+              <li class="catalog-options-filter-sorting">
+                <span class="catalog-filter-sorting">Сортировка:</span>
+              </li>
               <li class="catalog-options-btn-first">
                 <a href="#" class="catalog-options-btn catalog-options-btn-active">По цене</a>
               </li>
@@ -212,91 +186,57 @@
             </ul>
             <div class="btn-catalog-arrow">
               <a href="#" class="catalog-arrow-up">
-                <!--
-                  тут должна быть иконка Кнопка сортировки каталога вверх
-                  src="img/icon-svg/icon-up-down-dir.svg"
-                -->
+                <p class="visually-hidden">Стрелка вверх</p>
               </a>
               <a href="#" class="catalog-arrow-down">
-                <!--
-                  тут должна быть иконка Кнопка сортировки каталога вниз
-                  src="img/icon-svg/icon-up-down-dir.svg"
-                -->
+                <p class="visually-hidden">Стрелка вниз</p>
               </a>
             </div>
           </div>
           <ul class="catalog-production">
             <li class="catalog-production-perf">
               <img src="img/content-images/bfg-3000.jpg" alt="Перфоратор BOSCH BFG 3000" width="218" height="170">
-              <!--
-                тут должна быть картинка Перфоратор BOSCH BFG 3000
-                src="img/content-images/bfg-3000.jpg"
-              -->
-              <h3 class="catalog-product-firm">Перфоратор BOSCH BFG 3000</h3>
-              <span class="catalog-product-outdate">
-                <del class="catalog-product-outdate-del">22500 Р.</del>
-              </span>
+              <a href="#" class="catalog-product-firm">Перфоратор BOSCH BFG 3000</a>
+              <del class="catalog-product-outdate-del">22500 Р.</del>
               <span class="catalog-product-price">15500 Р.</span>
               <div class="catalog-popup">
-                <a href="#" class="catalog-popup-buy">Купить</a>
+                <a href="writeus.html" class="catalog-popup-buy">Купить</a>
                 <a href="#" class="catalog-popup-bookmark">В закладки</a>
               </div>
             </li>
             <li class="catalog-production-perf">
               <img src="img/content-images/bfg-6000.jpg" alt="Перфоратор BOSCH BFG 6000" width="218" height="170">
-              <!--
-                тут должна быть картинка Перфоратор BOSCH BFG 6000
-                src="img/content-images/bfg-6000.jpg"
-              -->
-              <h3 class="catalog-product-firm">Перфоратор BOSCH BFG 6000</h3>
-              <span class="catalog-product-outdate">
-                <del class="catalog-product-outdate-del">30500 Р.</del>
-              </span>
+              <a href="#" class="catalog-product-firm">Перфоратор BOSCH BFG 6000</a>
+              <del class="catalog-product-outdate-del">30500 Р.</del>
               <span class="catalog-product-price">25500 Р.</span>
               <div class="catalog-popup">
-                <a href="#" class="catalog-popup-buy">Купить</a>
+                <a href="writeus.html" class="catalog-popup-buy">Купить</a>
                 <a href="#" class="catalog-popup-bookmark">В закладки</a>
               </div>
             </li>
             <li class="catalog-production-perf flag-new">
               <img src="img/content-images/bfg-2000.jpg" alt="Перфоратор BOSCH BFG 2000" width="218" height="170">
-              <!--
-                тут должна быть картинка Перфоратор BOSCH BFG 2000
-                src="img/content-images/bfg-2000.jpg"
-              -->
-              <h3 class="catalog-product-firm">Перфоратор BOSCH BFG 2000</h3>
+              <a href="#" class="catalog-product-firm">Перфоратор BOSCH BFG 2000</a>
               <span class="catalog-last-product-price">12500 Р.</span>
               <div class="catalog-popup">
-                <a href="#" class="catalog-popup-buy">Купить</a>
+                <a href="writeus.html" class="catalog-popup-buy">Купить</a>
                 <a href="#" class="catalog-popup-bookmark">В закладки</a>
               </div>
             </li>
             <li class="catalog-production-perf">
               <img src="img/content-images/bfg-3000.jpg" alt="Перфоратор BOSCH BFG 3000" width="218" height="170">
-              <!--
-                тут должна быть картинка Перфоратор BOSCH BFG 3000
-                src="img/content-images/bfg-3000.jpg"
-              -->
-              <h3 class="catalog-product-firm">Перфоратор BOSCH BFG 3000</h3>
-              <span class="catalog-product-outdate">
-                <del class="catalog-product-outdate-del">22500 Р.</del>
-              </span>
+              <a href="#" class="catalog-product-firm">Перфоратор BOSCH BFG 3000</a>
+              <del class="catalog-product-outdate-del">22500 Р.</del>
               <span class="catalog-product-price">15500 Р.</span>
               <div class="catalog-popup">
-                <a href="#" class="catalog-popup-buy">Купить</a>
+                <a href="writeus.html" class="catalog-popup-buy">Купить</a>
                 <a href="#" class="catalog-popup-bookmark">В закладки</a>
               </div>
             </li>
             <li class="catalog-production-perf flag-new">
               <img src="img/content-images/bfg-6000.jpg" alt="Перфоратор BOSCH BFG 6000" width="218" height="170">
-              <!--
-                тут должна быть картинка Перфоратор BOSCH BFG 6000
-                src="img/content-images/bfg-6000.jpg"
-              -->
-              <h3 class="catalog-product-firm">Перфоратор BOSCH BFG 6000</h3>
-              <span class="catalog-product-outdate">
-                <del class="catalog-product-outdate-del">30500 Р.</del>
-              </span>
+              <a href="#" class="catalog-product-firm">Перфоратор BOSCH BFG 6000</a>
+              <del class="catalog-product-outdate-del">30500 Р.</del>
               <span class="catalog-product-price">25500 Р.</span>
               <div class="catalog-popup">
                 <a href="#" class="catalog-popup-buy">Купить</a>
@@ -305,59 +245,39 @@
             </li>
             <li class="catalog-production-perf">
               <img src="img/content-images/bfg-2000.jpg" alt="Перфоратор BOSCH BFG 2000" width="218" height="170">
-              <!--
-                тут должна быть картинка Перфоратор BOSCH BFG 2000
-                src="img/content-images/bfg-2000.jpg"
-              -->
-              <h3 class="catalog-product-firm">Перфоратор BOSCH BFG 2000</h3>
+              <a href="#" class="catalog-product-firm">Перфоратор BOSCH BFG 2000</a>
               <span class="catalog-last-product-price last-product">12500 Р.</span>
               <div class="catalog-popup">
-                <a href="#" class="catalog-popup-buy">Купить</a>
+                <a href="writeus.html" class="catalog-popup-buy">Купить</a>
                 <a href="#" class="catalog-popup-bookmark">В закладки</a>
               </div>
             </li>
             <li class="catalog-production-perf flag-new">
               <img src="img/content-images/bfg-3000.jpg" alt="Перфоратор BOSCH BFG 3000" width="218" height="170">
-              <!--
-                тут должна быть картинка Перфоратор BOSCH BFG 3000
-                src="img/content-images/bfg-3000.jpg"
-              -->
-              <h3 class="catalog-product-firm">Перфоратор BOSCH BFG 3000</h3>
-              <span class="catalog-product-outdate">
-                <del class="catalog-product-outdate-del">22500 Р.</del>
-              </span>
+              <a href="#" class="catalog-product-firm">Перфоратор BOSCH BFG 3000</a>
+              <del class="catalog-product-outdate-del">22500 Р.</del>
               <span class="catalog-product-price">15500 Р.</span>
               <div class="catalog-popup">
-                <a href="#" class="catalog-popup-buy">Купить</a>
+                <a href="writeus.html" class="catalog-popup-buy">Купить</a>
                 <a href="#" class="catalog-popup-bookmark">В закладки</a>
               </div>
             </li>
             <li class="catalog-production-perf">
               <img src="img/content-images/bfg-6000.jpg" alt="Перфоратор BOSCH BFG 6000" width="218" height="170">
-              <!--
-                тут должна быть картинка Перфоратор BOSCH BFG 6000
-                src="img/content-images/bfg-6000.jpg"
-              -->
-              <h3 class="catalog-product-firm">Перфоратор BOSCH BFG 6000</h3>
-              <span class="catalog-product-outdate">
-                <del class="catalog-product-outdate-del">30500 Р.</del>
-              </span>
+              <a href="#" class="catalog-product-firm">Перфоратор BOSCH BFG 6000</a>
+              <del class="catalog-product-outdate-del">30500 Р.</del>
               <span class="catalog-product-price">25500 Р.</span>
               <div class="catalog-popup">
-                <a href="#" class="catalog-popup-buy">Купить</a>
+                <a href="writeus.html" class="catalog-popup-buy">Купить</a>
                 <a href="#" class="catalog-popup-bookmark">В закладки</a>
               </div>
             </li>
             <li class="catalog-production-perf">
               <img src="img/content-images/bfg-2000.jpg" alt="Перфоратор BOSCH BFG 2000" width="218" height="170">
-              <!--
-                тут должна быть картинка Перфоратор BOSCH BFG 2000
-                src="img/content-images/bfg-2000.jpg"
-              -->
-              <h3 class="catalog-product-firm">Перфоратор BOSCH BFG 2000</h3>
+              <a href="#" class="catalog-product-firm">Перфоратор BOSCH BFG 2000</a>
               <span class="catalog-last-product-price last-product">12500 Р.</span>
               <div class="catalog-popup">
-                <a href="#" class="catalog-popup-buy">Купить</a>
+                <a href="writeus.html" class="catalog-popup-buy">Купить</a>
                 <a href="#" class="catalog-popup-bookmark">В закладки</a>
               </div>
             </li>
@@ -389,11 +309,7 @@
     <div class="footer-center-container">
       <div class="footer-top-panel">
         <a href="index.html" class="footer-logo">
-          <span class="visually-hidden"> Логотип Техномарт</span>
-          <!--
-            тут должен быть логотип Техномарт
-            src="img/texnomart.png"
-          -->
+          <img src="img/texnomart-footer.png" alt="Логотип футера Техномарт" width="138" height="23">
         </a>
         <ul class="footer-inner-panel">
           <li class="footer-inner-panel-li">
@@ -448,28 +364,16 @@
           <li class="footer-bottom-social-li">
             <a href="#" class="footer-social-vk footer-social">
               <span class="visually-hidden">Иконка Вконтакте</span>
-              <!--
-                  тут должна быть иконка Вконтакте
-                  src="img/icon-svg/icon-vk.svg"
-                -->
             </a>
           </li>
           <li class="footer-bottom-social-li">
             <a href="#" class="footer-social-fb footer-social">
               <span class="visually-hidden">Иконка Фейсбук</span>
-              <!--
-                  тут должна быть иконка Фейсбук
-                  src="img/icon-svg/icon-fb.svg"
-                -->
             </a>
           </li>
           <li class="footer-bottom-social-li">
             <a href="#" class="footer-social-inst footer-social">
               <span class="visually-hidden">Иконка Инстаграм</span>
-              <!--
-                  тут должна быть иконка Инстаграм
-                  src="img/icon-svg/icon-insta.svg"
-                -->
             </a>
           </li>
         </ul>
@@ -479,7 +383,7 @@
         </div>
         <div class="footer-bottom-design">
           <p class="footer-bottom-design-text">Разработано —</p>
-          <a href="https://htmlacademy.ru" class="footer-mail-design">htmlacademy.ru</a>
+          <a href="https://htmlacademy.ru/intensive/htmlcss" class="footer-mail-design">htmlacademy.ru</a>
         </div>
       </div>
     </div>
