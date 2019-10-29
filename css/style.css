@@ -1414,13 +1414,13 @@ input[type="radio"].visually-hidden {
 .guarantee-slide {
     background-image: url(../img/content-images/warranty-image.png);
     background-repeat: no-repeat;
-    background-position: 102% 150%;
+    background-position: 100% 150%;
 }
 
 .credit-slide {
     background-image: url(../img/content-images/credit-image.png);
     background-repeat: no-repeat;
-    background-position: 104% 151%;
+    background-position: 100% 151%;
 }
 
 .credit-slide .button {
